@@ -3,16 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <a href="#" class="header__logo">
-      <img src="http://placehold.it/150x100" alt="" class="header__logo-image">
+      <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" class="header__logo-image">
     </a>
+    <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Открыть меню</button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -34,14 +37,14 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="main__text">Милые штучки ручной работы для дома</h1>
+    <h1 class="main__text main__text--index">Милые штуки ручной <br> работы для дома</h1>
     <section class="menu">
       <ul class="menu__list">
         <li class="menu__items">
-          <a class="menu__link" href="#">Предметы интерьера</a>
+          <a class="menu__link menu__link--decor" href="#">Предметы интерьера</a>
         </li>
         <li class="menu__items">
-          <a class="menu__link" href="#">Детские игрушки</a>
+          <a class="menu__link menu__link--toys" href="#">Детские игрушки</a>
         </li>
       </ul>
     </section>
@@ -64,25 +67,38 @@
           <td class="product__property-value">15 см</td>
         </tr>
       </table>
-      <img src="http://placehold.it/150x100" alt="" class="product__image">
+      <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар" class="product__image">
       <p class="product__price">Цена: 990 руб.</p>
       <a class="button button--order">Заказать</a>
     </section>
     <section class="about">
       <h2 class="about__header">Коротко о нас:</h2>
       <ul class="about__benefits">
-        <li class="about__benefit about__benefit--ecology">Экологически
-          чистые материалы</li>
-        <li class="about__benefit about__benefit--ecology">Скандинавский стиль
-          по российской цене</li>
-        <li class="about__benefit about__benefit--heart">Увеличивает лайки
-          на фотографиях</li>
-        <li class="about__benefit about__benefit--handmade">Связано вручную с
-          любовью и умилением</li>
-        <li class="about__benefit about__benefit--rocket">Поддержка отечественного производителя
+        <li class="about__benefit about__benefit--ecology">
+            <include src="img/icon-feature-flower.svg"></include>
+            <p>Экологически <br> чистые материалы</p> </li>
+        <li class="about__benefit about__benefit--money">
+            <include src="img/icon-feature-money.svg"></include>
+            <p>Скандинавский стиль <br> по российской цене</p>
+          </li>
+        <li class="about__benefit about__benefit--heart">
+            <include src="img/icon-feature-heart.svg"></include>
+            <p>Увеличивает лайки <br>
+              на фотографиях</p>
+            </li>
+        <li class="about__benefit about__benefit--handmade">
+            <include src="img/icon-feature-ball.svg"></include>
+          <p>Связано вручную с <br>
+            любовью и умилением</p>
+          </li>
+        <li class="about__benefit about__benefit--rocket">
+            <include src="img/icon-feature-rocket.svg"></include>
+          <p>Поддержка отечественного <br> производителя</p>
         </li>
-        <li class="about__benefit about__benefit--present">Поставляется в
-          подарочной упаковке</li>
+        <li class="about__benefit about__benefit--present">
+            <include src="img/icon-feature-gift.svg"></include>
+          <p>Поставляется в <br>
+            подарочной упаковке</p></li>
       </ul>
     </section>
   </main>
@@ -90,19 +106,30 @@
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#" class="social_link social__link--instagram">Инстаграм</a>
+          <a href="#" class="social_link social__link--instagram">
+            <span class="visually-hidden">Инстаграм</span>
+            <include src="img/icon-insta.svg"></include>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social_link social__link--facebook">Фейсбук</a>
+          <a href="#" class="social_link social__link--facebook">
+              <span class="visually-hidden">Фейсбук</span>
+              <include src="img/icon-fb.svg"></include>
+            </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social_link social__link--twitter">Твиттер</a>
+          <a href="#" class="social_link social__link--twitter">
+              <span class="visually-hidden">Твиттер</span></a>
+              <include src="img/icon-twitter.svg"></include>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="button copyright__link">HTML Academy</a>
+      <b class="copyright__text">Разработано</b>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <span class="visually-hidden">HTML Academy</span>
+        <include src="img/logo-htmlacademy.svg"></include>
+      </a>
     </div>
   </footer>
 </body>

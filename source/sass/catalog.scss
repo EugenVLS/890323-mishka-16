@@ -1,0 +1,30 @@
+.catalog {
+  padding: 30px 30px 0 30px;
+}
+
+.catalog__item {
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
+}
+
+.catalog__item-name {
+  font-size: 17px;
+  line-height: 24px;
+  padding-left: 29px;
+  margin: 0;
+}
+
+.catalog__item-description {
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 29px;
+  margin-right: 29px;
+  border-bottom: 1px solid #ececec;
+}
+
+.catalog__item-price {
+  font-size: 15px;
+  padding-left: 29px;
+}

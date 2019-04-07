@@ -1,0 +1,54 @@
+.product {
+  padding: 34px 30px 36px 30px;
+}
+
+.product__name {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.promo__label {
+  color: #63d1bb;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.product__description {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.product__properties {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  margin-bottom: 30px;
+
+  tr {
+    box-shadow: 0 1px 0 #ececec;
+    height: 40px;
+  }
+}
+
+.product__price {
+  color: #444444;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button--order {
+  margin-top: 20px;
+  display: block;
+  padding: 20px 85px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  line-height: 20px;
+  text-transform: uppercase;
+}

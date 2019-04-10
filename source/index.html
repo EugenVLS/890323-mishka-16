@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -14,7 +13,7 @@
     <a href="#" class="header__logo">
       <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" class="header__logo-image">
     </a>
-    <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Открыть меню</button>
+    <button aria-label="Открыть меню" class="main-nav__toggle main-nav__toggle--open" type="button"></button>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -27,10 +26,11 @@
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item">
+            <button aria-label="Искать" class="button button--search" type="submit"></button>
             <input type="text" class="main-nav__search" placeholder="Поиск по сайту">
           </li>
           <li class="main-nav__item">
-            <p class="main-nav__basket">Корзина: пока пуста</p>
+            <span class="main-nav__basket">Корзина: пока пуста</span>
           </li>
         </ul>
       </div>
@@ -106,28 +106,25 @@
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#" class="social_link social__link--instagram">
-            <span class="visually-hidden">Инстаграм</span>
+          <a href="#" aria-label="Инстаграм" class="social_link social__link--instagram">
             <include src="img/icon-insta.svg"></include>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social_link social__link--facebook">
-              <span class="visually-hidden">Фейсбук</span>
+          <a href="#" aria-label="Фейсбук" class="social_link social__link--facebook">
               <include src="img/icon-fb.svg"></include>
             </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social_link social__link--twitter">
-              <span class="visually-hidden">Твиттер</span></a>
-              <include src="img/icon-twitter.svg"></include>
+          <a href="#" aria-label="Твиттер" class="social_link social__link--twitter">
+            <include src="img/icon-twitter.svg"></include>
+          </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <span class="visually-hidden">HTML Academy</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy" class="copyright__link">
         <include src="img/logo-htmlacademy.svg"></include>
       </a>
     </div>

@@ -3,17 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <a href="#" class="header__logo">
-      <img src="http://placehold.it/150x100" alt="" class="header__logo-image">
+      <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" class="header__logo-image">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
+        <button aria-label="Открыть меню" class="main-nav__toggle main-nav__toggle--open" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#">Каталог товаров</a>
@@ -24,30 +26,33 @@
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item">
+            <button aria-label="Искать" class="button button--search" type="submit"></button>
             <input type="text" class="main-nav__search" placeholder="Поиск по сайту">
           </li>
           <li class="main-nav__item">
-            <p class="main-nav__basket">Корзина: пока пуста</p>
+            Корзина: <span class="main-nav__basket">пока пуста</span>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main">
-    <h1 class="main__text">Милые штучки ручной работы для дома</h1>
+    <h1 class="main__text main__text--index">Милые штуки ручной <br> работы для дома</h1>
     <section class="menu">
       <ul class="menu__list">
         <li class="menu__items">
-          <a class="menu__link" href="#">Предметы интерьера</a>
+          <a class="menu__link menu__link--decor" href="#">Предметы интерьера</a>
         </li>
         <li class="menu__items">
-          <a class="menu__link" href="#">Детские игрушки</a>
+          <a class="menu__link menu__link--toys" href="#">Детские игрушки</a>
         </li>
       </ul>
     </section>
     <section class="product">
       <h2 class="product__name">Вязаные корзинки</h2>
-      <p class="promo__label">Товар недели</p>
+      <div class="promo">
+        <p class="promo__label">Товар недели</p>
+      </div>
       <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.</p>
       <table class="product__properties">
@@ -64,25 +69,40 @@
           <td class="product__property-value">15 см</td>
         </tr>
       </table>
-      <img src="http://placehold.it/150x100" alt="" class="product__image">
+      <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар" class="product__image">
       <p class="product__price">Цена: 990 руб.</p>
       <a class="button button--order">Заказать</a>
     </section>
     <section class="about">
       <h2 class="about__header">Коротко о нас:</h2>
       <ul class="about__benefits">
-        <li class="about__benefit about__benefit--ecology">Экологически
-          чистые материалы</li>
-        <li class="about__benefit about__benefit--ecology">Скандинавский стиль
-          по российской цене</li>
-        <li class="about__benefit about__benefit--heart">Увеличивает лайки
-          на фотографиях</li>
-        <li class="about__benefit about__benefit--handmade">Связано вручную с
-          любовью и умилением</li>
-        <li class="about__benefit about__benefit--rocket">Поддержка отечественного производителя
+        <li class="about__benefit about__benefit--ecology">
+          <img src="img/icon-feature-flower.svg">
+          <p>Экологически <br> чистые материалы</p>
         </li>
-        <li class="about__benefit about__benefit--present">Поставляется в
-          подарочной упаковке</li>
+        <li class="about__benefit about__benefit--money">
+          <img src="img/icon-feature-money.svg">
+          <p>Скандинавский стиль <br> по российской цене</p>
+        </li>
+        <li class="about__benefit about__benefit--heart">
+          <img src="img/icon-feature-heart.svg">
+          <p>Увеличивает лайки <br>
+            на фотографиях</p>
+        </li>
+        <li class="about__benefit about__benefit--handmade">
+          <img src="img/icon-feature-ball.svg">
+          <p>Связано вручную с <br>
+            любовью и умилением</p>
+        </li>
+        <li class="about__benefit about__benefit--rocket">
+          <img src="img/icon-feature-rocket.svg">
+          <p>Поддержка отечественного <br> производителя</p>
+        </li>
+        <li class="about__benefit about__benefit--present">
+          <img src="img/icon-feature-gift.svg">
+          <p>Поставляется в <br>
+            подарочной упаковке</p>
+        </li>
       </ul>
     </section>
   </main>
@@ -90,19 +110,27 @@
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#" class="social_link social__link--instagram">Инстаграм</a>
+          <a href="#" aria-label="Инстаграм" class="social__link social__link--instagram">
+            <img src="img/icon-insta.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social_link social__link--facebook">Фейсбук</a>
+          <a href="#" aria-label="Фейсбук" class="social__link social__link--facebook">
+            <img src="img/icon-fb.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social_link social__link--twitter">Твиттер</a>
+          <a href="#" aria-label="Твиттер" class="social__link social__link--twitter">
+            <img src="img/icon-twitter.svg">
+          </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="button copyright__link">HTML Academy</a>
+      <b class="copyright__text">Разработано</b>
+      <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy" class="copyright__link">
+        <img src="img/logo-htmlacademy.svg">
+      </a>
     </div>
   </footer>
 </body>

@@ -10,12 +10,59 @@
 }
 
 .about__benefits {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list_reset();
 }
 
 .about__benefit {
   line-height: 20px;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet_width) {
+  .about__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__benefits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__benefit {
+    line-height: 22px;
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .about__benefit--ecology {
+    order: 1;
+  }
+
+  .about__benefit--money {
+    order: 3;
+  }
+
+  .about__benefit--heart {
+    order: 5;
+  }
+
+  .about__benefit--handmade {
+    order: 2;
+  }
+
+  .about__benefit--rocket {
+    order: 4;
+  }
+
+  .about__benefit--present {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .about {
+    padding-left: 221px;
+    padding-right: 221px;
+  }
 }

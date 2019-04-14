@@ -1,26 +1,27 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("fonts/opensans.woff") format("woff");
-  src: url("fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("fonts/opensansbold.woff") format("woff");
-  src: url("fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
-@import "../../node_modules/normalize.css/normalize.css";
+@import "variables.scss";
+@import "mixins.scss";
 @import "body.scss";
+@import "container.scss";
 @import "button.scss";
 @import "header.scss";
 @import "main-nav.scss";
-@import "main.scss";
-@import "menu.scss";
+@import "title-menu.scss";
 @import "catalog.scss";
 @import "product.scss";
 @import "promo.scss";

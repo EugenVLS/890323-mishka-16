@@ -32,3 +32,25 @@
 .catalog__item-buy-block {
   display: flex;
 }
+
+@media (min-width: $tablet_width) {
+  .catalog {
+    padding: 30px 50px 0 50px;
+  }
+
+  .catalog__item {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 316px;
+    display: block;
+  }
+}

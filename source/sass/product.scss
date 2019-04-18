@@ -1,8 +1,3 @@
-.product {
-  position: relative;
-  padding: 34px 30px 36px 30px;
-}
-
 .product__name {
   font-size: 25px;
   line-height: 30px;
@@ -45,11 +40,18 @@
   text-align: center;
 }
 
-@media (min-width: $tablet_width) {
-  .product {
+.product__inner {
+  position: relative;
+  padding: 34px 30px 36px 30px;
+
+  @include inner();
+
+  @media (min-width: $tablet_width) {
     padding: 34px 50px 36px 50px;
   }
+}
 
+@media (min-width: $tablet_width) {
   .product__title {
     display: flex;
     justify-content: space-between;
@@ -62,6 +64,10 @@
 
   .product__buy {
     position: inherit;
+  }
+
+  .product__info {
+    padding: 0 50px;
   }
 
   .product__name {

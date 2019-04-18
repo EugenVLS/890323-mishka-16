@@ -9,45 +9,52 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <nav class="main-nav">
+  <header class="header">
+    <div class="header__inner">
+        <div class="header__logo logo">
+            <a href="#" class="logo__link">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" class="logo__image">
+            </a>
+          </div>
+      <nav class="header__main-nav main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--logo">
-              <a href="#" class="main-nav__link logo">
-                <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" class="logo__image">
-              </a>
-              <button aria-label="Открыть меню" class="main-nav__toggle main-nav__toggle--open" type="button"></button>
-            </li>
             <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item main-nav__item--order">
               <a class="main-nav__link" href="#">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link main-nav__link--search">
-                <span>Поиск по сайту</span></a>
-            </li>
-            <li class="main-nav__item main-nav__item--basket">
-              <a class="main-nav__link main-nav__link--basket">
-                Корзина:<span class="text text--basket"> пока пуста</span></a>
-            </li>
-            <li class="main-nav__item main-nav__item--new">
-              <a class="main-nav__link main-nav__link--new">
-                Новые поступления</a>
-            </li>
-            <li class="main-nav__item main-nav__item--sale">
-              <a class="main-nav__link main-nav__link--sale">
-                Распродажа</a>
-            </li>
-            </ul>
+          </ul>
         </div>
       </nav>
-    </header>
-    <main class="main">
-      <section class="title-menu title-menu--index">
+      <div class="header__info-nav info-nav">
+          <ul class="info-nav__list">
+              <li class="info-nav__item info-nav__item--search">
+                <a class="info-nav__link info-nav__link--search">
+                  <span>Поиск по сайту</span></a>
+              </li>
+              <li class="info-nav__item info-nav__item--basket">
+                <a class="info-nav__link info-nav__link--basket">
+                  Корзина:<span class="text text--basket"> пока пуста</span></a>
+              </li>
+            </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="title-menu title-menu--index">
+      <div class="title-menu__inner">
+        <ul class="promo-nav">
+          <li class="promo-nav__item">
+            <a class="promo-nav__link">
+              Новые поступления</a>
+          </li>
+          <li class="promo-nav__item">
+            <a class="promo-nav__link">
+              Распродажа</a>
+          </li>
+        </ul>
         <p class="title-menu__label">Бесплатная доставка по России</p>
         <h1 class="title-menu__title">Милые штуки ручной работы для дома</h1>
         <div class="title-menu__menu menu">
@@ -60,8 +67,10 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="product">
+      </div>
+    </section>
+    <section class="product">
+      <div class="product__inner">
         <div class="product__title">
           <h2 class="product__name">Вязаные корзинки</h2>
           <div class="promo">
@@ -96,8 +105,10 @@
             <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар" class="product__image">
           </div>
         </div>
-      </section>
-      <section class="about">
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__inner">
         <h2 class="about__header">Коротко о нас:</h2>
         <ul class="about__benefits">
           <li class="about__benefit about__benefit--ecology">
@@ -121,19 +132,18 @@
             <p>Скандинавский стиль по российской цене</p>
           </li>
           <li class="about__benefit about__benefit--heart">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33.05px" height="27.857px"
-              viewBox="47.475 50.071 33.05 27.857" enable-background="new 47.475 50.071 33.05 27.857"
-              xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="33.05px" height="27.857px" viewBox="47.475 50.071 33.05 27.857"
+              enable-background="new 47.475 50.071 33.05 27.857" xml:space="preserve">
               <path fill="#231F20"
                 d="M80.525,58.808c0-4.825-3.912-8.736-8.736-8.736c-3.405,0-6.348,1.951-7.789,4.793 c-1.441-2.842-4.384-4.793-7.789-4.793c-4.825,0-8.736,3.911-8.736,8.736c0,9.127,14.657,19.121,16.525,19.121 C65.869,77.929,80.525,67.979,80.525,58.808z" />
             </svg>
             <p>Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about__benefit about__benefit--handmade">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.373px" height="34.373px"
-              viewBox="0 0 34.373 34.373" enable-background="new 0 0 34.373 34.373" xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="34.373px" height="34.373px" viewBox="0 0 34.373 34.373"
+              enable-background="new 0 0 34.373 34.373" xml:space="preserve">
               <g>
                 <path d="M0.286,14.069c-0.382,2.073-0.384,4.211,0.008,6.301l4.121-3.21L0.286,14.069z" />
                 <path d="M24.403,1.585C19.62-0.623,13.959-0.559,9.149,1.992l7.513,5.625L24.403,1.585z" />
@@ -158,10 +168,9 @@
             <p>Связано вручную с любовью и умилением</p>
           </li>
           <li class="about__benefit about__benefit--rocket">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54.156px" height="23.183px"
-              viewBox="612.532 500.386 54.156 23.183" enable-background="new 612.532 500.386 54.156 23.183"
-              xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="54.156px" height="23.183px" viewBox="612.532 500.386 54.156 23.183"
+              enable-background="new 612.532 500.386 54.156 23.183" xml:space="preserve">
               <g>
                 <path
                   d="M652.844,506.098c-3.647-0.971-7.839-1.667-12.359-1.666c-2.891,0.001-5.457,0.243-7.71,0.623l-6.784-4.668l-13.456,0.005 l5.811,6.184h8.447c-4.58,1.598-6.759,3.515-6.759,3.515l0.002,3.777c0,0,2.313,1.912,6.931,3.518l-8.623-0.005l-5.811,6.188 l13.455,0.002l6.816-4.692c2.261,0.398,4.822,0.647,7.681,0.648c4.522-0.001,8.712-0.697,12.36-1.667 c-1.176-1.775-1.915-3.743-1.918-5.877C650.93,509.842,651.665,507.871,652.844,506.098z" />
@@ -172,19 +181,20 @@
             <p>Поддержка отечественного производителя</p>
           </li>
           <li class="about__benefit about__benefit--present">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.666px" height="32.486px"
-              viewBox="239.665 239.757 32.666 32.486" enable-background="new 239.665 239.757 32.666 32.486"
-              xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="32.666px" height="32.486px" viewBox="239.665 239.757 32.666 32.486"
+              enable-background="new 239.665 239.757 32.666 32.486" xml:space="preserve">
               <path fill="#231F20"
                 d="M242.56,272.243h12.504v-13.91H242.56V272.243z M270.742,248.623h-7.335 c0.521-0.267,0.984-0.549,1.396-0.845c1.588-1.133,2.424-2.57,2.42-3.999c0.002-1.169-0.556-2.202-1.359-2.901 c-0.805-0.704-1.869-1.119-3.016-1.121c-1.22-0.001-2.352,0.421-3.32,1.069c-1.459,0.979-2.606,2.451-3.424,4.067 c-0.039,0.079-0.078,0.157-0.115,0.236c-0.299-0.623-0.647-1.226-1.041-1.792c-0.691-0.985-1.523-1.86-2.497-2.511 c-0.97-0.646-2.103-1.069-3.322-1.069c-1.213,0.004-2.323,0.514-3.155,1.295c-0.828,0.783-1.41,1.885-1.412,3.135 c-0.002,0.73,0.211,1.494,0.649,2.188c0.552,0.872,1.424,1.628,2.633,2.248h-6.588c-0.878,0-1.591,0.712-1.591,1.59v5.897h15.396 v-7.488h1.873v7.488h15.396v-5.897C272.333,249.334,271.621,248.623,270.742,248.623 M248.38,246.284 c-0.622-0.391-1-0.785-1.22-1.135c-0.22-0.354-0.294-0.662-0.296-0.963c-0.004-0.504,0.248-1.042,0.691-1.461 c0.437-0.415,1.028-0.667,1.562-0.667h0.013c0.685,0,1.366,0.231,2.046,0.683c1.018,0.671,1.975,1.85,2.645,3.187 c0.342,0.676,0.609,1.39,0.789,2.087C251.528,247.694,249.532,247.013,248.38,246.284 M258.917,244.657 c0.557-0.797,1.21-1.466,1.887-1.916c0.68-0.451,1.362-0.683,2.047-0.683h0.006c0.574,0,1.117,0.22,1.494,0.55 c0.377,0.336,0.571,0.739,0.573,1.171c-0.004,0.512-0.272,1.259-1.467,2.132c-1.138,0.825-3.101,1.673-6.127,2.265 C257.62,246.974,258.177,245.704,258.917,244.657 M256.937,272.243h12.506v-13.91h-12.506V272.243z" />
             </svg>
             <p>Поставляется в подарочной упаковке</p>
           </li>
         </ul>
-      </section>
-    </main>
-    <footer class="footer">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
       <div class="footer__logo logo">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" class="logo__image">
       </div>
@@ -192,10 +202,9 @@
         <ul class="social__list">
           <li class="social__item">
             <a href="#" aria-label="Инстаграм" class="social__link social__link--instagram">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px"
-                viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334"
-                xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334"
+                enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
                 <g id="instagram">
                   <g>
                     <path fill="#231F20"
@@ -207,10 +216,9 @@
           </li>
           <li class="social__item">
             <a href="#" aria-label="Фейсбук" class="social__link social__link--facebook">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px"
-                viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718"
-                xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718"
+                enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
                 <g id="facebook">
                   <g>
                     <path fill="#231F20"
@@ -222,10 +230,9 @@
           </li>
           <li class="social__item">
             <a href="#" aria-label="Твиттер" class="social__link social__link--twitter">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px"
-                viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168"
-                xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168"
+                enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
                 <g id="twitter">
                   <g>
                     <path fill="#231F20"
@@ -240,16 +247,16 @@
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy" class="copyright__link">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
             enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path
               d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
           </svg>
         </a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>

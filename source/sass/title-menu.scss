@@ -1,6 +1,13 @@
 .title-menu {
-  padding-top: 76px;
   background-color: #f1f1f1;
+}
+
+.title-menu__inner {
+  @include inner();
+
+  @media (min-width: $tablet_width) {
+    padding: 20px 50px 0 50px;
+  }
 }
 
 .title-menu__title {
@@ -71,14 +78,13 @@
 
 @media (min-width: $tablet_width) {
   .title-menu {
-    margin-top: -79px;
-    padding: 155px 50px 0 50px;
+    position: relative;
   }
 
   .title-menu__label {
     display: block;
     position: absolute;
-    top: 105px;
+    top: 35px;
     right: 50px;
     margin: 0;
     font-size: 15px;
@@ -90,6 +96,7 @@
     margin: 0;
     font-size: 43px;
     line-height: 50px;
+    margin-top: 150px;
     margin-bottom: 371px;
   }
 

@@ -1,12 +1,19 @@
-.about {
-  padding: 34px 30px 30px 30px;
-}
-
 .about__header {
   font-size: 25px;
   line-height: 30px;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.about__inner {
+  padding: 34px 30px 30px 30px;
+
+  @include inner();
+
+  @media (min-width: $desktop_width) {
+    padding-left: 221px;
+    padding-right: 221px;
+  }
 }
 
 .about__benefits {
@@ -25,44 +32,11 @@
   }
 
   .about__benefits {
-    display: flex;
-    flex-wrap: wrap;
+    columns: 2;
   }
 
   .about__benefit {
     line-height: 22px;
     font-size: 20px;
-    width: 50%;
-  }
-
-  .about__benefit--ecology {
-    order: 1;
-  }
-
-  .about__benefit--money {
-    order: 3;
-  }
-
-  .about__benefit--heart {
-    order: 5;
-  }
-
-  .about__benefit--handmade {
-    order: 2;
-  }
-
-  .about__benefit--rocket {
-    order: 4;
-  }
-
-  .about__benefit--present {
-    order: 6;
-  }
-}
-
-@media (min-width: $desktop_width) {
-  .about {
-    padding-left: 221px;
-    padding-right: 221px;
   }
 }

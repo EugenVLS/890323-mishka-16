@@ -33,22 +33,26 @@
   display: flex;
 }
 
-@media (min-width: $tablet_width) {
-  .catalog {
+.catalog__inner {
+  @include inner();
+
+  @media (min-width: $tablet_width) {
     padding: 30px 50px 0 50px;
   }
 
+  @media (min-width: $desktop_width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet_width) {
   .catalog__item {
     display: flex;
   }
 }
 
 @media (min-width: $desktop_width) {
-  .catalog {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .catalog__item {
     width: 316px;
     display: block;

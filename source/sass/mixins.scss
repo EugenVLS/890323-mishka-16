@@ -15,7 +15,7 @@
 
 @mixin inner {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   width: 320px;
 
   @media (min-width: $tablet_width) {

@@ -1,4 +1,30 @@
 .footer {
-  padding: 25px 30px 25px 30px;
   background-color: #f1f1f1;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__inner {
+  padding: 25px 30px 25px 30px;
+
+  @include inner();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__logo {
+    display: block;
+  }
+
+  .footer__social.social {
+    border: none;
+    width: 142px;
+  }
 }

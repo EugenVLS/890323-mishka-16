@@ -1,0 +1,126 @@
+.title-menu {
+  background-color: #f1f1f1;
+}
+
+.title-menu__inner {
+  @include inner();
+
+  @media (min-width: $tablet_width) {
+    padding: 20px 50px 0 50px;
+  }
+}
+
+.title-menu__title {
+  margin: 0;
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  margin-bottom: 120px;
+  padding: 0 30px;
+}
+
+.title-menu__title.title-menu__title--catalog {
+  margin-bottom: 40px;
+}
+
+.title-menu__label {
+  display: none;
+}
+
+.title-menu--index {
+  background-image: url("../img/hero-desktop@1x.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu__list {
+  @include list_reset();
+}
+
+.menu__link {
+  padding: 30px 120px 30px 29px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+
+  &--decor {
+    background-color: #63d1bb;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+    }
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+    }
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .title-menu {
+    position: relative;
+  }
+
+  .title-menu__label {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .title-menu__title {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 150px;
+    margin-bottom: 371px;
+  }
+
+  .menu__list {
+    display: flex;
+  }
+
+  .menu__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .menu__item {
+    width: 525px;
+  }
+
+  .menu__link {
+    padding: 30px 310px 30px 29px;
+  }
+
+  .title-menu__title {
+    margin-bottom: 421px;
+  }
+}

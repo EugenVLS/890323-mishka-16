@@ -1,6 +1,10 @@
+.social {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .social__list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  justify-content: space-around;
+
+  @include list_reset();
 }

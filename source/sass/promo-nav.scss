@@ -1,0 +1,27 @@
+.promo-nav {
+  @include list_reset();
+
+  display: none;
+  margin-bottom: 150px;
+
+  @media (min-width: $desktop_width) {
+    display: flex;
+  }
+}
+
+.promo-nav__item {
+  margin-right: 70px;
+}
+
+@media (min-width: $desktop_width) {
+  .main-nav__item--new,
+  .main-nav__item--sale {
+    display: flex;
+    justify-content: start;
+    width: 203px;
+    padding: 0;
+    order: 6;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

@@ -1,9 +1,11 @@
 body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  margin: 0;
 }
 
 .visually-hidden,
@@ -19,4 +21,24 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   border: 0;
   clip-path: inset(100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+@media (min-width: $tablet_width) and (max-width: $desktop_width) {
+  body {
+    padding-top: 80px;
+  }
 }

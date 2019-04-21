@@ -1,0 +1,28 @@
+@mixin no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+@mixin list_reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin inner {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet_width) {
+    width: $tablet_width;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: $desktop_width;
+  }
+}

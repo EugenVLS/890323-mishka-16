@@ -13,6 +13,19 @@
   margin-right: 70px;
 }
 
+.promo-nav__link {
+  cursor: pointer;
+}
+
+.promo-nav__link:hover,
+.promo-nav__link:focus {
+  opacity: 0.6;
+}
+
+.promo-nav__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $desktop_width) {
   .main-nav__item--new,
   .main-nav__item--sale {

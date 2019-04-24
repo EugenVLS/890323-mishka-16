@@ -6,47 +6,56 @@
   display: flex;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   justify-content: start;
-  align-items: center;
+  padding-top: 23px;
   padding-left: 36px;
   height: 79px;
   width: 320px;
 }
 
+
 .info-nav__link {
-  padding-left: 40px;
+  padding-left: 46px;
   text-decoration: none;
   color: #000000;
   cursor: pointer;
 }
 
+.info-nav__link:hover,
+.info-nav__link:focus {
+  color: rgba(0,0,0,0.6);
+}
+
+.info-nav__link:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.info-nav__link:hover svg,
+.info-nav__link:focus svg {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.info-nav__link:active svg{
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
 .info-nav__link--search {
   position: relative;
-
-  &::before {
-    content: "";
+  svg {
     position: absolute;
-    top: 50%;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    transform: translateY(-50%);
-    background-image: url("../img/icon-search.svg");
+    left: -4px;
+    top: 4px;
     opacity: 0.2;
   }
 }
 
 .info-nav__link--basket {
   position: relative;
-
-  &::before {
-    content: "";
+  svg {
     position: absolute;
-    top: 50%;
-    left: 0;
-    width: 20px;
-    height: 19px;
-    transform: translateY(-50%);
-    background-image: url("../img/icon-cart.svg");
+    left: -5px;
+    top: 3px;
     opacity: 0.2;
   }
 }
@@ -66,10 +75,12 @@
   }
 
   .info-nav__link--search {
-    &::before {
+    svg {
+      position: absolute;
+      left: 50%;
       top: 50%;
-      left: 100%;
-      transform: translateX(-50%) translateY(-50%);
+      opacity: 0.2;
+      transform: translateX(70%) translateY(-70%);
     }
   }
 

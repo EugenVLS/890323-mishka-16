@@ -4,9 +4,9 @@
 
 .title-menu__inner {
   @include inner();
-
+  padding: 70px 0 0 0;
   @media (min-width: $tablet_width) {
-    padding: 20px 50px 0 50px;
+    padding: 20px 63px 0 50px;
   }
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
   font-size: 27px;
   line-height: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 122px;
   padding: 0 30px;
 }
 
@@ -39,7 +39,8 @@
 }
 
 .menu__link {
-  padding: 30px 120px 30px 29px;
+  position: relative;
+  padding: 26px 73px 30px 29px;
   display: block;
   text-decoration: none;
   color: #ffffff;
@@ -47,45 +48,54 @@
 
   &--decor {
     background-color: #63d1bb;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 40px;
-      height: 62px;
-      background-image: url("../img/icon-interior.svg");
-    }
   }
 
   &--toys {
     background-color: #56c3b2;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 60px;
-      height: 60px;
-      background-image: url("../img/icon-toy.svg");
-    }
   }
+}
+
+.menu__link:hover,
+.menu__link:focus {
+ position: relative;
+ top: -5px;
+ height: calc(100% + 5px);
+}
+
+.menu__link:hover svg,
+.menu__link:focus svg {
+  opacity: 0.7;
+}
+
+.menu__link:active {
+  color: rgba(255,255,255,0.3);
+}
+
+.menu__link:active svg {
+  opacity: 0.3;
+}
+
+.menu__link svg {
+  position: absolute;
+  top: 30px;
+  right: 36px;
+  fill: #149080;
+  opacity: 0.5;
 }
 
 @media (min-width: $tablet_width) {
   .title-menu {
     position: relative;
   }
+  .title-menu__title {
+    position: relative;
+  }
 
   .title-menu__label {
     display: block;
     position: absolute;
-    top: 35px;
-    right: 50px;
+    top: 17px;
+    right: 56px;
     margin: 0;
     font-size: 15px;
     line-height: 24px;
@@ -96,8 +106,12 @@
     margin: 0;
     font-size: 43px;
     line-height: 50px;
-    margin-top: 150px;
-    margin-bottom: 371px;
+    margin-top: 133px;
+    margin-bottom: 374px;
+  }
+
+  .menu__item {
+    width: 50%;
   }
 
   .menu__list {

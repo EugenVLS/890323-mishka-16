@@ -4,7 +4,12 @@
   margin: 0;
 }
 
+.product__title {
+  margin-bottom: 23px;
+}
+
 .product__description {
+  margin-bottom: 13px;
   font-size: 15px;
   font-weight: 400;
   color: #444444;
@@ -16,7 +21,7 @@
   font-size: 15px;
   line-height: 20px;
   color: #444444;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   tr {
     box-shadow: 0 1px 0 #ececec;
@@ -26,7 +31,7 @@
 
 .product__buy {
   position: absolute;
-  bottom: -20px;
+  bottom: -24px;
 }
 
 .product__image {
@@ -42,7 +47,7 @@
 
 .product__inner {
   position: relative;
-  padding: 34px 30px 36px 30px;
+  padding: 47px 50px 36px 42px;
 
   @include inner();
 

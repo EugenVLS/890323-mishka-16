@@ -1,0 +1,66 @@
+.video {
+  margin-bottom: 60px;
+}
+
+.video__inner {
+  @include inner();
+  padding: 0 30px;
+}
+
+.video__wrapper {
+  position: relative;
+  border: 1px solid #ececec;
+  padding: 30px 0 30px 0;
+}
+
+.video__title {
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 54px;
+  svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #63d1bb;
+  }
+}
+
+.video__text {
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.video__info {
+  padding: 0 34px;
+}
+
+.video__play {
+  margin-bottom: 220px;
+}
+
+.video__description {
+  position: absolute;
+  bottom: 30px;
+  width: 192px;
+}
+
+@media (min-width: $tablet_width) {
+  .video__inner {
+    width: $tablet_width;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .video__inner {
+    width: $desktop_width;
+  }
+}

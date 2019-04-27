@@ -1,10 +1,8 @@
 .product__name {
-  font-size: 25px;
-  line-height: 30px;
   margin: 0;
 }
 
-.product__title {
+.product__header {
   margin-bottom: 23px;
 }
 
@@ -31,11 +29,12 @@
 
 .product__buy {
   position: absolute;
-  bottom: -24px;
+  bottom: 36px;
+  width: 260px;
 }
 
 .product__image {
-  margin-bottom: 30px;
+  margin-bottom: 140px;
 }
 
 .product__price {
@@ -46,21 +45,20 @@
 }
 
 .product__inner {
-  position: relative;
-  padding: 47px 50px 36px 42px;
+  padding: 24px 30px 36px 30px;
 
   @include inner();
 
   @media (min-width: $tablet_width) {
-    padding: 34px 50px 36px 50px;
+    padding: 47px 50px 36px 41px;
   }
 }
 
 @media (min-width: $tablet_width) {
-  .product__title {
+  .product__header {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
+    padding-right: 34px;
   }
 
   .product__content {
@@ -72,37 +70,71 @@
   }
 
   .product__info {
-    padding: 0 50px;
+    padding: 0 120px 0 0;
   }
 
   .product__name {
-    font-size: 43px;
-    line-height: 50px;
     margin-right: 10px;
   }
 
-  .promo__label {
+  .product__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .product__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 26px;
+    margin-bottom: 31px;
+  }
+
+  .product__properties {
+    margin-bottom: 54px;
+  }
+
+  .product__image {
+    margin-bottom: 0;
+  }
+
+  .promo .promo__label {
     width: 70px;
+    margin-top: 9px;
     text-align: center;
   }
 }
 
 @media (min-width: $desktop_width) {
-  .product__title {
+  .product__header {
     position: absolute;
-    top: 60px;
+    top: 124px;
+    left: 69px;
     flex-direction: row-reverse;
     padding-left: 30px;
   }
 
   .product__info {
     width: 482px;
-    padding-left: 150px;
-    padding-right: 50px;
-    padding-top: 160px;
+    padding-left: 160px;
+    padding-right: 30px;
+    padding-top: 130px;
   }
 
   .promo .promo__label {
     margin-right: 50px;
+    margin-top: 13px;
+  }
+
+  .product__inner {
+    padding: 73px 50px 36px 61px;
+  }
+
+  .product__description {
+    margin-bottom: 44px;
+  }
+
+  .product__properties {
+    margin-bottom: 107px;
   }
 }

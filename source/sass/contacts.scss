@@ -1,0 +1,143 @@
+.contacts__inner {
+  @include inner();
+  padding: 40px 30px 39px 30px;
+}
+
+.contacts__header {
+  margin-bottom: 20px;
+}
+
+.contacts__header .block-title {
+  font-size: 18px;
+}
+
+.contacts__table {
+  width: 100%;
+}
+
+.contacts__map {
+  margin-bottom: 91px;
+}
+
+.contacts__table tr {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts__table td {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__table td:first-child {
+  flex-grow: 1;
+}
+
+.contacts__data {
+  max-width: 181px;
+}
+
+.contacts__map {
+  margin-left: -30px;
+}
+
+.contacts__request-link {
+  position: absolute;
+  width: 260px;
+  bottom: 39px;
+}
+
+@media (min-width: $tablet_width) {
+  .contacts__inner {
+    width: $tablet_width;
+    padding: 60px 50px 39px 50px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 82px;
+      top: 50px;
+      right: 50px;
+      background-image: url("../img/icon-flag.svg");
+    }
+  }
+
+  .contacts__header {
+    margin-bottom: 60px;
+  }
+
+  .contacts__header .block-title {
+    font-size: 43px;
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    tr {
+      flex-grow: 1;
+      padding-right: 55px;
+    }
+  }
+
+  .contacts__map {
+    margin-left: -50px;
+  }
+
+  .contacts__request-link {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .contacts__inner {
+    width: $desktop_width;
+    padding: 80px 50px 68px 224px;
+    display: flex;
+    &::before {
+      top: 134px;
+      left: 113px;
+    }
+  }
+
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 0 0;
+  }
+
+  .contacts__header .block-title {
+    font-size: 53px;
+  }
+
+  .contacts__table {
+    margin-bottom: 50px;
+  }
+
+  .contacts__table tbody {
+    flex-direction: column;
+    tr {
+      flex-grow: 1;
+      padding-right: 0;
+    }
+  }
+
+  .contacts__request-link {
+    position: inherit;
+    width: 260px;
+    bottom: 39px;
+  }
+
+  .contacts__map {
+    margin-left: 0;
+  }
+
+  .contacts__request-link {
+    transform: none;
+    width: 230px;
+    margin: 0 auto 0 0;
+  }
+
+}

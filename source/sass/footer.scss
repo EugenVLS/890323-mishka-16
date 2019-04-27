@@ -28,8 +28,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer__inner {
+    padding: 38px 30px 25px 11px;
+    justify-content: flex-start;
+  }
+
   .footer__logo {
     display: block;
+    margin-right: 160px;
   }
 
   .footer__social.social {
@@ -37,3 +43,18 @@
     width: 142px;
   }
 }
+
+@media (min-width: $desktop_width) {
+  .footer__inner {
+    padding: 38px 50px 25px 51px;
+  }
+
+  .footer__logo {
+    margin-right: 350px;
+  }
+
+  .footer__social.social {
+    margin-right: 192px;
+  }
+}
+

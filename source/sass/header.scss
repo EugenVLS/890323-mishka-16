@@ -3,7 +3,7 @@
   text-align: center;
   padding: 19px 0;
   position: relative;
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo__link:focus,
@@ -146,7 +146,8 @@
   }
 
   .header__logo {
-    width: 364px;
+    width: 352px;
+    border-bottom: none;
   }
 
   .logo {
@@ -159,10 +160,11 @@
   .header__inner {
     width: $desktop_width;
     padding: 0 50px;
+    min-height: 88px;
   }
 
   .header__logo {
-    width: 230px;
+    width: 288px;
     order: 2;
   }
 

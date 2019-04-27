@@ -4,16 +4,16 @@
 
 .main-nav__list {
   @include list_reset();
-  padding: 18px;
 }
 
 .main-nav__item {
   display: flex;
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   justify-content: start;
+  align-items: center;
   padding-left: 76px;
-  height: 79px;
+  height: 88px;
   width: 320px;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__link {
@@ -51,10 +51,12 @@
   .main-nav__toggle {
     display: none;
   }
+
   .main-nav__link {
     font-size: 15px;
     line-height: 24px;
   }
+
   .main-nav__list {
     display: flex;
     padding-left: 42px;
@@ -68,14 +70,16 @@
   .main-nav__item {
     padding: 0 30px;
     justify-content: flex-start;
+    align-items: flex-start;
     order: 3;
+    border-bottom: none;
   }
 
   .main-nav__item.main-nav__item--catalog,
   .main-nav__item.main-nav__item--order {
     width: 169px;
-    box-shadow: none;
     padding: 0;
+    padding-top: 18px;
   }
 
   .main-nav__item.main-nav__item--basket {
@@ -89,12 +93,18 @@
     padding-left: 0;
   }
 
-  .main-nav__item {
-    width: 200px;
-    padding: 0;
+  .main-nav__list .main-nav__item {
+    width: 184px;
+    padding-top: 30px;
+  }
+
+  .main-nav__item.main-nav__item--order {
+    padding-left: 35px;
+    border-left: 1px solid #ececec;
   }
 
   .main-nav__item .main-nav__link {
+    font-size: 17px;
     padding: 0;
   }
 
@@ -104,5 +114,10 @@
 
   .main-nav__item.main-nav__item--order {
     justify-content: flex-start;
+    width: 225px;
+  }
+
+  .main-nav__item--basket .main-nav__link {
+    padding-left: 40px;
   }
 }

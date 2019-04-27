@@ -23,6 +23,23 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
+.block-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+}
+
+.zig-zag {
+  width: 320px;
+  height: 6px;
+  margin: 0 auto;
+  border: none;
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-image: url("../img/bg-zigzag-line.svg");
+}
+
 *,
 *::before,
 *::after {
@@ -39,6 +56,30 @@ html {
 
 @media (min-width: $tablet_width) and (max-width: $desktop_width) {
   body {
-    padding-top: 80px;
+    padding-top: 88px;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .block-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .zig-zag {
+    width: 768px;
+    height: 17px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .block-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .zig-zag {
+    width: 1050px;
+    height: 23px;
   }
 }

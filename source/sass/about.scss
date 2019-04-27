@@ -1,7 +1,4 @@
 .about__header {
-  font-size: 25px;
-  line-height: 30px;
-  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -26,21 +23,46 @@
 }
 
 @media (min-width: $tablet_width) {
+  .about__inner {
+    padding: 79px 60px 30px 38px;
+  }
+
   .about__header {
     font-size: 43px;
     line-height: 50px;
+    margin: 0;
+    margin-bottom: 50px;
   }
 
   .about__benefits {
     columns: 2;
+    padding: 0px 0 0 6px;
   }
 
   .about__benefit {
     line-height: 22px;
     font-size: 20px;
+    margin-bottom: 62px;
+  }
+
+  .about__benefit p {
+    margin-top: 15px;
   }
 
   .about__benefit svg {
     fill: #63d1bb;
   }
 }
+
+@media (min-width: $desktop_width) {
+  .about__inner {
+    padding: 119px 240px 30px 218px;
+  }
+
+  .about__header {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
+}
+

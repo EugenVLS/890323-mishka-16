@@ -12,6 +12,18 @@
   text-transform: uppercase;
 }
 
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 101px;
+  height: 77px;
+  background-image: url("../img/icon-play.svg");
+  background-color: transparent;
+  border: none;
+}
+
 .button--black-border:hover,
 .button--black-border:focus {
   background-color: #444444;

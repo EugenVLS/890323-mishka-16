@@ -1,5 +1,10 @@
+.reviews {
+  @include wave();
+}
+
 .reviews__inner {
   position: relative;
+
   @include inner();
   padding: 0 30px 45px 30px;
 }
@@ -98,7 +103,6 @@
     font-size: 17px;
     margin-bottom: 60px;
   }
-
 }
 
 @media (min-width: $desktop_width) {

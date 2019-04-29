@@ -6,6 +6,7 @@
 .social__list {
   display: flex;
   justify-content: flex-start;
+
   @include list_reset();
   padding-left: 57px;
 }
@@ -25,7 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-top: 16px;
   }
 

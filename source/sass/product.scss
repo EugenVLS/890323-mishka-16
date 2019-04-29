@@ -1,3 +1,7 @@
+.product {
+  @include wave();
+}
+
 .product__name {
   margin: 0;
 }
@@ -50,7 +54,7 @@
   @include inner();
 
   @media (min-width: $tablet_width) {
-    padding: 47px 50px 36px 41px;
+    padding: 47px 50px 36px 50px;
   }
 }
 
@@ -70,7 +74,7 @@
   }
 
   .product__info {
-    padding: 0 120px 0 0;
+    padding: 0 50px 0 0;
   }
 
   .product__name {
@@ -86,16 +90,21 @@
   .product__description {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 26px;
+    margin-top: 0;
     margin-bottom: 31px;
   }
 
   .product__properties {
-    margin-bottom: 54px;
+    margin-bottom: 46px;
   }
 
   .product__image {
     margin-bottom: 0;
+  }
+
+  .product__image img {
+    width: 333px;
+    height: 404px;
   }
 
   .promo .promo__label {
@@ -136,5 +145,10 @@
 
   .product__properties {
     margin-bottom: 107px;
+  }
+
+  .product__image img {
+    width: 525px;
+    height: 636px;
   }
 }

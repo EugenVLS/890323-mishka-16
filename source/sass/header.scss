@@ -50,8 +50,8 @@
   content: "";
 
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 
   width: 20px;
   height: 2px;
@@ -69,10 +69,10 @@
   top: 50%;
   right: 31px;
   transform: translateY(-30%);
+
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 0;
     right: 0;
@@ -146,8 +146,14 @@
   }
 
   .header__logo {
-    width: 352px;
+    width: 48%;
     border-bottom: none;
+  }
+
+  .header__logo img {
+    display: block;
+    width: 112px;
+    height: auto;
   }
 
   .logo {
@@ -158,28 +164,24 @@
 
 @media (min-width: $desktop_width) {
   .header__inner {
+    flex-wrap: nowrap;
+    justify-content: space-between;
     width: $desktop_width;
     padding: 0 50px;
     min-height: 88px;
   }
 
-  .header__logo {
-    width: 288px;
-    order: 2;
+  .header__logo img {
+    display: block;
+    width: 148px;
+    height: auto;
   }
 
   .logo {
+    width: auto;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .header__main-nav {
-    order: 1;
-  }
-
-  .header__info-nav {
-    order: 3;
   }
 }

@@ -8,10 +8,10 @@ body {
   line-height: 24px;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .visually-hidden,
 input[type="checkbox"].visually-hidden,
@@ -33,16 +33,6 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 30px;
   margin: 0;
-}
-
-.zig-zag {
-  width: 320px;
-  height: 6px;
-  margin: 0 auto;
-  border: none;
-  background-size: 100%;
-  background-repeat: repeat-x;
-  background-image: url("../img/bg-zigzag-line.svg");
 }
 
 *,
@@ -70,21 +60,11 @@ html {
     font-size: 43px;
     line-height: 50px;
   }
-
-  .zig-zag {
-    width: 768px;
-    height: 17px;
-  }
 }
 
 @media (min-width: $desktop_width) {
   .block-title {
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .zig-zag {
-    width: 1050px;
-    height: 23px;
   }
 }

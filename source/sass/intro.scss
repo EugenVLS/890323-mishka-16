@@ -1,30 +1,32 @@
-.title-menu {
+.intro {
   background-color: #f1f1f1;
 }
 
-.title-menu__inner {
+.intro__inner {
   @include inner();
-  padding: 70px 0 1px 0;
+  padding: 70px 0 0 0;
+
   @media (min-width: $tablet_width) {
-    padding: 25px 50px 1px 50px
+    padding: 25px 50px 0 50px;
   }
 }
 
-.title-menu__title {
+.intro__title {
   text-align: center;
   margin-bottom: 122px;
   padding: 0 30px;
 }
 
-.title-menu__title.title-menu__title--catalog {
-  margin: 0 0 60px 0;
+.intro__title.intro__title--catalog {
+  margin: 0;
+  padding-bottom: 60px;
 }
 
-.title-menu__label {
+.intro__label {
   display: none;
 }
 
-.title-menu--index {
+.intro--index {
   background-image: url("../img/hero-desktop@1x.jpg");
   background-position: 50%;
   background-size: cover;
@@ -54,9 +56,9 @@
 
 .menu__link:hover,
 .menu__link:focus {
- position: relative;
- top: -5px;
- height: calc(100% + 5px);
+  position: relative;
+  top: -5px;
+  height: calc(100% + 5px);
 }
 
 .menu__link:hover svg,
@@ -65,7 +67,7 @@
 }
 
 .menu__link:active {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .menu__link:active svg {
@@ -81,50 +83,44 @@
 }
 
 @media (min-width: $tablet_width) {
-  .title-menu {
+  .intro {
     position: relative;
-  }
 
-  .title-menu__inner {
-    border-top: 1px solid #ececec;
-  }
-
-  .title-menu__title.title-menu__title--catalog {
-    margin: 69px 0 60px 0;
-  }
-
-  .title-menu__menu {
-    position: relative;
     &::after {
       position: absolute;
       content: "";
-      width: 768px;
-      height: 16px;
-      top: 106px;
-      left: -51px;
-      background-size: 100%;
+      width: 100%;
+      height: 24px;
+      bottom: -12px;
+      left: 0;
+      background-size: contain;
       background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
 
-  .title-menu__title {
-    position: relative;
+  .intro__inner {
+    border-top: 1px solid #ececec;
   }
 
-  .title-menu__label {
+  .intro__title.intro__title--catalog {
+    margin-top: 69px;
+  }
+
+  .intro__title {
+    position: relative;
+    margin-top: 133px;
+    margin-bottom: 374px;
+  }
+
+  .intro__label {
     display: block;
     position: absolute;
-    top: 26px;
+    top: 18px;
     right: 51px;
     margin: 0;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-  }
-
-  .title-menu__title {
-    margin-top: 133px;
-    margin-bottom: 374px;
   }
 
   .menu__item {
@@ -143,17 +139,24 @@
 }
 
 @media (min-width: $desktop_width) {
+  .intro {
+    &::after {
+      height: 34px;
+      bottom: -19px;
+    }
+  }
+
   .menu__item {
     width: 525px;
   }
 
-  .title-menu__title {
+  .intro__title {
     margin-bottom: 359px;
     margin-top: 113px;
     padding: 0 120px;
   }
 
-  .title-menu__menu {
+  .intro__menu {
     &::after {
       width: 1150px;
       height: 16px;

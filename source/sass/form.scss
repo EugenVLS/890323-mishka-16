@@ -1,0 +1,6 @@
+.form__inner {
+  position: relative;
+
+  @include inner();
+  padding: 30px;
+}

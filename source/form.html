@@ -66,72 +66,73 @@
     </section>
     <section class="form">
       <div class="form__inner">
+        <h2 class="visually-hidden">Форма</h2>
         <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами,
           чтобы уточнить детали.</p>
         <form>
-          <fieldset>
-            <legend>Тип</legend>
+          <fieldset class="fieldset">
+            <legend class="form__label form__label--green fieldset__legend">Тип</legend>
             <div class="radio">
-              <input type="radio" id="radio1" name="type" value="interier">
-              <label for="radio1">Аксессуар для интерьера</label>
+              <input class="visually-hidden" type="radio" id="radio1" name="type" value="interier">
+              <label class="form__label" for="radio1">Аксессуар для интерьера</label>
             </div>
             <div class="radio">
-              <input type="radio" id="radio2" name="type" value="toy">
-              <label for="radio2">Детская игрушка</label>
+              <input class="visually-hidden" type="radio" id="radio2" name="type" value="toy">
+              <label class="form__label" for="radio2">Детская игрушка</label>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
+          <fieldset class="fieldset">
+            <legend class="form__label form__label--green fieldset__legend">Цвет</legend>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox1" name="white">
-              <label for="checkbox1">Белый</label>
+              <input class="visually-hidden" type="checkbox" id="checkbox1" name="white">
+              <label class="form__label" for="checkbox1">Белый</label>
             </div>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox2" name="grey">
-              <label for="checkbox2">Серый</label>
+              <input class="visually-hidden" type="checkbox" id="checkbox2" name="grey">
+              <label class="form__label" for="checkbox2">Серый</label>
             </div>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox3" name="tiffani">
-              <label for="checkbox3">«Тиффани»</label>
+              <input class="visually-hidden" type="checkbox" id="checkbox3" name="tiffani">
+              <label class="form__label" for="checkbox3">«Тиффани»</label>
             </div>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox4" name="black">
-              <label for="checkbox4">Черный</label>
+              <input class="visually-hidden" type="checkbox" id="checkbox4" name="black">
+              <label class="form__label" for="checkbox4">Черный</label>
             </div>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox5" name="pink">
-              <label for="checkbox5">Розовый</label>
+              <input class="visually-hidden" type="checkbox" id="checkbox5" name="pink">
+              <label class="form__label" for="checkbox5">Розовый</label>
             </div>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox6" name="orange">
-              <label for="checkbox6">Оранжевый</label>
+              <input class="visually-hidden" type="checkbox" id="checkbox6" name="orange">
+              <label class="form__label" for="checkbox6">Оранжевый</label>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>ФИО</legend>
+          <fieldset class="fieldset">
+            <legend class="form__label form__label--green fieldset__legend">ФИО</legend>
             <div class="input input--type-1">
-              <label for="user-name">Имя:</label>
+              <label class="form__label" for="user-name">Имя:</label>
               <input type="text" placeholder="Введите ваше имя*" name="user-name" id="user-name">
             </div>
             <div class="input input--type-1">
-              <label for="user-surname">Фамилия:</label>
+              <label class="form__label" for="user-surname">Фамилия:</label>
               <input type="text" placeholder="Укажите фамилию*" name="user-name" id="user-surname">
             </div>
             <div class="input input--type-1">
-              <label for="user-patronymic">Отчество:</label>
+              <label class="form__label" for="user-patronymic">Отчество:</label>
               <input type="text" placeholder="Отчество, если желаете" name="user-name" id="user-patronymic">
             </div>
             <div class="input input--type-2">
-              <label for="user-phone">тел</label>
+              <label class="form__label form__label--green" for="user-phone">тел</label>
               <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="user-phone" id="user-phone">
             </div>
             <div class="input input--type-2">
-              <label for="user-email">E-mail</label>
+              <label class="form__label form__label--green" for="user-email">E-mail</label>
               <input type="email" placeholder="Отчество, если желаете" name="user-email" id="user-email">
             </div>
             <div class="textarea">
-              <label for="user-text">Доп</label>
+              <label class="form__label form__label--green" for="user-text">Доп</label>
               <textarea placeholder="Опишите все ваши пожелания к заказу" name="user-text" id="user-text"></textarea>
             </div>
           </fieldset>

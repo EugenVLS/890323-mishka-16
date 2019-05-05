@@ -4,7 +4,7 @@
 }
 
 .catalog__item-description {
-  padding: 0 29px;
+  padding: 30px;
 }
 
 .catalog__item-name {
@@ -48,11 +48,21 @@
   .catalog__item {
     display: flex;
   }
+
+  .catalog__item-image {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 @media (min-width: $desktop_width) {
   .catalog__item {
     width: 316px;
     display: block;
+  }
+
+  .catalog__item-image {
+    width: 316px;
+    height: 462px;
   }
 }

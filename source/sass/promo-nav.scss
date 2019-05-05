@@ -10,7 +10,21 @@
 }
 
 .promo-nav__item {
-  margin-right: 70px;
+  width: 50%;
+  padding-right: 20px;
+}
+
+.promo-nav__link {
+  cursor: pointer;
+}
+
+.promo-nav__link:hover,
+.promo-nav__link:focus {
+  opacity: 0.6;
+}
+
+.promo-nav__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $desktop_width) {
@@ -23,5 +37,14 @@
     order: 6;
     font-size: 15px;
     line-height: 24px;
+  }
+
+  .promo-nav__link {
+    font-size: 15px;
+  }
+
+  .promo-nav {
+    width: 40%;
+    margin-bottom: 0;
   }
 }

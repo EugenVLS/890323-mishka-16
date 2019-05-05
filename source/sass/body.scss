@@ -1,4 +1,5 @@
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   min-width: 320px;
@@ -7,6 +8,11 @@ body {
   font-weight: 700;
   line-height: 24px;
 }
+
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
 
 .visually-hidden,
 input[type="checkbox"].visually-hidden,
@@ -21,6 +27,13 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   border: 0;
   clip-path: inset(100%);
+}
+
+.block-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
 }
 
 *,
@@ -39,6 +52,20 @@ html {
 
 @media (min-width: $tablet_width) and (max-width: $desktop_width) {
   body {
-    padding-top: 80px;
+    padding-top: 88px;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .block-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .block-title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

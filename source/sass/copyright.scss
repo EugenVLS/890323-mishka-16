@@ -1,11 +1,29 @@
 .copyright {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  padding: 27px 0 0 38px;
 }
 
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
+  margin-right: 29px;
+}
+
+.copyright__link svg {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: #46c1ae;
+}
+
+.copyright__link:active svg {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 25px 0 0 79px;
+  }
 }

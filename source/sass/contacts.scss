@@ -18,6 +18,8 @@
 .contacts__map {
   margin-bottom: 91px;
   margin-left: -30px;
+  width: 322px;
+  height: 457px;
 }
 
 .contacts__table tr {
@@ -82,6 +84,11 @@
     font-size: 43px;
   }
 
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+  }
+
   .contacts__table tbody {
     display: flex;
 
@@ -122,6 +129,11 @@
 
   .contacts__header .block-title {
     font-size: 53px;
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 457px;
   }
 
   .contacts__table {

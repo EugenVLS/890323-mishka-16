@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9fc08d1f-c8a6-4359-b046-80ff6f8a1df2&lang=ru_RU"></script>
 </head>
 
 <body>
@@ -144,9 +145,11 @@
           </div>
           <div class="product__image">
             <picture>
-                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-                <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар">
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.jpg 2x,
+                                                            img/triple-set-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@2x.jpg 2x,
+                                                           img/triple-set-tablet@1x.jpg 1x">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Товар">
             </picture>
           </div>
         </div>
@@ -281,8 +284,8 @@
           </table>
           <a href="#" class="contacts__request-link button button--black-border">Напишите нам</a>
         </div>
-        <div class="contacts__map">
-            <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="map">
+        <div class="contacts__map" id="map">
+            <!-- <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="map"> -->
         </div>
       </div>
     </section>
@@ -416,6 +419,19 @@
     addBtn.addEventListener('click', function () {
         modalSize.classList.remove('show');
         overlay.classList.remove('modal-open');
+    });
+    ymaps.ready(function(){
+            var map = new ymaps.Map("map", {
+                center: [59.938631, 30.323055],
+                zoom: 17
+            });
+            pointer = new ymaps.Placemark([59.938631, 30.323055], {}, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/icon-map-pin.svg',
+            iconImageSize: [66, 101],
+            iconOffset: [-33,-50.5]
+            });
+            map.geoObjects.add(pointer);
     });
   </script>
 </body>

@@ -20,6 +20,9 @@
 .about__benefit {
   line-height: 20px;
   margin-bottom: 33px;
+  svg {
+    fill: #63d1bb;
+  }
 }
 
 @media (min-width: $tablet_width) {
@@ -47,10 +50,6 @@
 
   .about__benefit p {
     margin-top: 15px;
-  }
-
-  .about__benefit svg {
-    fill: #63d1bb;
   }
 }
 

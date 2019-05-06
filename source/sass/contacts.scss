@@ -40,6 +40,18 @@
   max-width: 181px;
 }
 
+.contacts__data--email {
+  border-bottom: 1px solid #62d1ba;
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
 .contacts__request-link {
   position: absolute;
   width: 260px;

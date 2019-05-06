@@ -62,11 +62,11 @@
       <div class="intro__inner">
         <ul class="promo-nav">
           <li class="promo-nav__item">
-            <a class="promo-nav__link">
+            <a href="#" class="promo-nav__link">
               Новые поступления</a>
           </li>
           <li class="promo-nav__item">
-            <a class="promo-nav__link">
+            <a href="#" class="promo-nav__link">
               Распродажа</a>
           </li>
         </ul>
@@ -269,7 +269,7 @@
             <tbody>
               <tr>
                 <td>e-mail:</td>
-                <td class="contacts__data">info@mimimishkashop.ru</td>
+                <td class="contacts__data contacts__data--email">info@mimimishkashop.ru</td>
               </tr>
               <tr>
                 <td>адрес:</td>
@@ -374,23 +374,30 @@
   <section class="modal modal-size">
     <h2 class="modal-size__header">Добавить в корзину</h2>
     <p class="modal-size__text">Выберите размер:</p>
-    <div class="modal-size__radio radio">
-      <input class="visually-hidden" type="radio" id="radio4" name="size" value="S">
-      <label for="radio4">S</label>
+    <div class="modal-size__btns">
+      <div class="modal-size__radio radio">
+        <input class="visually-hidden" type="radio" id="radio4" name="size" value="S">
+        <label for="radio4">S</label>
+      </div>
+      <div class="modal-size__radio radio">
+        <input class="visually-hidden" type="radio" id="radio5" name="size" value="M">
+        <label for="radio5">M</label>
+      </div>
+      <div class="modal-size__radio radio">
+        <input class="visually-hidden" type="radio" id="radio6" name="size" value="L">
+        <label for="radio6">L</label>
+      </div>
     </div>
-    <div class="modal-size__radio radio">
-      <input class="visually-hidden" type="radio" id="radio5" name="size" value="M">
-      <label for="radio5">M</label>
-    </div>
-    <div class="modal-size__radio radio">
-      <input class="visually-hidden" type="radio" id="radio6" name="size" value="L">
-      <label for="radio6">L</label>
-    </div>
+    <button class="button btn-add button--green">Добавить</button>
   </section>
+  <div class="overlay"></div>
   <script>
     var header = document.querySelector('.header');
     var navToggle = document.querySelector('.header__toggle');
-
+    var orderBtn = document.querySelector('.product__order-link');
+    var modalSize = document.querySelector('.modal-size');
+    var overlay = document.querySelector('.overlay');
+    var addBtn = document.querySelector('.btn-add');
     header.classList.remove('header--nojs');
 
     navToggle.addEventListener('click', function () {
@@ -402,7 +409,14 @@
         header.classList.remove('header--opened');
       }
     });
+    orderBtn.addEventListener('click', function () {
+        modalSize.classList.add('show');
+        overlay.classList.add('modal-open');
+    });
+    addBtn.addEventListener('click', function () {
+        modalSize.classList.remove('show');
+        overlay.classList.remove('modal-open');
+    });
   </script>
 </body>
-
 </html>

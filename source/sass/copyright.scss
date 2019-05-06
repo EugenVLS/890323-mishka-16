@@ -1,5 +1,6 @@
 .copyright {
   display: flex;
+  align-items: center;
   padding: 27px 0 0 38px;
 }
 
@@ -9,9 +10,13 @@
   margin-right: 29px;
 }
 
-.copyright__link svg {
-  fill: #63d1bb;
+.copyright__link {
+  line-height: 1px;
+  svg {
+    fill: #63d1bb;
+  }
 }
+
 
 .copyright__link:hover svg,
 .copyright__link:focus svg {

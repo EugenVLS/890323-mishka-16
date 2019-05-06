@@ -1,9 +1,6 @@
-.reviews {
-  @include wave();
-}
-
 .reviews__inner {
   position: relative;
+  @include wave();
 
   @include inner();
   padding: 0 30px 45px 30px;
@@ -48,6 +45,14 @@
   background-color: transparent;
   background-position: 50%;
   background-image: url("../img/icon-left-arrow.svg");
+  outline: none;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .controls__item--arrow-right {
@@ -67,6 +72,7 @@
     position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: auto;
     width: $tablet_width;
   }
 

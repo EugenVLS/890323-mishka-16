@@ -5,26 +5,32 @@
   outline: none;
   color: #000000;
   text-decoration: none;
+
   &:hover,
   &:focus {
     .catalog__item-description {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     }
+
     .catalog__item-name {
       opacity: 0.6;
     }
+
     .catalog__item-buy-block svg {
       fill: #63d1bb;
       opacity: 1;
     }
   }
+
   &:active {
     .catalog__item-description {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
+
     .catalog__item-name {
       opacity: 0.3;
     }
+
     .catalog__item-buy-block svg {
       fill: #63d1bb;
       opacity: 0.3;
@@ -68,6 +74,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
+
   svg {
     opacity: 0.2;
   }

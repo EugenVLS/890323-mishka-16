@@ -1,8 +1,9 @@
 .reviews__inner {
   position: relative;
-  @include wave();
 
+  @include wave();
   @include inner();
+
   padding: 0 30px 45px 30px;
 }
 
@@ -46,10 +47,12 @@
   background-position: 50%;
   background-image: url("../img/icon-left-arrow.svg");
   outline: none;
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }

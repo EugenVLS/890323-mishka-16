@@ -8,4 +8,66 @@
   height: 336px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
+  background-color: #ffffff;
+  z-index: 10;
+  padding: 36px 30px 46px 30px;
+}
+
+.modal-size__header {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal-size__text {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.modal-size__btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-size__radio {
+  width: 82px;
+  height: 52px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  label {
+    color: #444444;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.show {
+  display: block;
+}
+
+.modal-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background-color: #ffffff;
+  z-index: 2;
 }

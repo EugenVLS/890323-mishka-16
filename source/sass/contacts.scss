@@ -40,11 +40,14 @@
 
 .contacts__data {
   max-width: 181px;
+  margin: 0;
 }
 
 .contacts__data--email {
+  /* display: block; */
   border-bottom: 1px solid #62d1ba;
-
+  color: #444444;
+  text-decoration: none;
   &:hover,
   &:focus {
     color: #46c1ae;

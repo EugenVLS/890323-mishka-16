@@ -15,12 +15,12 @@
   margin-right: 40px;
 }
 
-.social__link svg:focus,
-.social__link svg:hover {
+.social__link:focus svg,
+.social__link:hover svg {
   fill: #46c1ae;
 }
 
-.social__link svg:active {
+.social__link:active svg {
   opacity: 0.3;
 }
 

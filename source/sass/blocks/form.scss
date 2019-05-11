@@ -59,23 +59,17 @@
   margin-bottom: 20px;
 
   input {
-    &:focus + label {
-      &::before {
+    &:focus + label::before {
         border: 2px solid #62d1ba;
-      }
     }
 
-    &:disabled + label {
-      &::before {
+    &:disabled + label::before {
         opacity: 0.3;
-      }
     }
   }
 
-  .form__label:hover {
-    &::before {
+  .form__label:hover ::before {
       border: 2px solid #62d1ba;
-    }
   }
 }
 
@@ -295,7 +289,7 @@
     padding: 50px;
   }
 
-  .grey-background {
+  .fieldset-wrapper {
     background-color: #f1f1f1;
   }
 
@@ -313,9 +307,17 @@
     padding-top: 0;
   }
 
-  .fieldset__controls--color {
+  .fieldset__controls--flex {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .fieldset__controls.fieldset__controls--fullwidth {
+    width: 815px;
+
+    input {
+      width: 700px;
+    }
   }
 
   .fieldset__controls {

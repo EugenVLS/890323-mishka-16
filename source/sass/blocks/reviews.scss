@@ -26,6 +26,10 @@
 
 .review__author-mail {
   margin: 0;
+  color: #444444;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .reviews__item {
@@ -70,13 +74,21 @@
 }
 
 @media (min-width: $tablet_width) {
+  .reviews {
+    margin-bottom: 71px;
+  }
+
   .reviews__inner {
-    padding: 80px 50px 68px 50px;
+    padding: 80px 50px 53px 50px;
     position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 350px 457px;
+    background-size: contain;
     width: $tablet_width;
+
+    &::after {
+      bottom: -68px;
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -90,7 +102,7 @@
   }
 
   .reviews__item {
-    margin-bottom: 53px;
+    margin-bottom: 0;
   }
 
   .reviews__write-link {
@@ -121,12 +133,8 @@
 @media (min-width: $desktop_width) {
   .reviews__inner {
     width: $desktop_width;
-    padding: 80px 50px 68px 224px;
+    padding: 80px 50px 102px 224px;
     background-position: 50px 0;
-  }
-
-  .reviews__item {
-    margin-bottom: 97px;
   }
 
   .review__text {

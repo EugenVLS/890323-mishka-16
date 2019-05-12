@@ -8,7 +8,7 @@
 
 .main-nav__item {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding-left: 76px;
   height: 88px;
@@ -49,7 +49,7 @@
 
 @media (min-width: $tablet_width) {
   .main-nav {
-    width: 48%;
+    width: 50%;
   }
 
   .main-nav__toggle {
@@ -63,7 +63,7 @@
 
   .main-nav__list {
     display: flex;
-    padding-left: 42px;
+    padding-left: 49px;
   }
 
   .main-nav__item {
@@ -76,8 +76,9 @@
 
 @media (min-width: $desktop_width) {
   .main-nav {
-    width: 40%;
+    width: 42%;
     order: -1;
+    margin-right: 10px;
   }
 
   .main-nav__list {
@@ -86,6 +87,10 @@
 
   .main-nav__list .main-nav__item {
     padding-top: 30px;
+  }
+
+  .main-nav__item {
+    width: 50%;
   }
 
   .main-nav__item .main-nav__link {

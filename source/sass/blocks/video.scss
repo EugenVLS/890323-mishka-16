@@ -10,7 +10,7 @@
 .video__wrapper {
   position: relative;
   border: 1px solid #ececec;
-  padding: 30px 0 30px 0;
+  padding: 30px 0 0 0;
 
   &:hover,
   &:focus {
@@ -54,7 +54,7 @@
 }
 
 .video__info {
-  padding: 0 34px;
+  padding: 0 34px 30px;
 }
 
 .video__play {

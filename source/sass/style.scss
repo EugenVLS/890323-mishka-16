@@ -3,6 +3,7 @@
   src: url("../fonts/opensans.woff2") format("woff2"),
        url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -12,12 +13,13 @@
        url("../fonts/opensansbold.woff") format("woff");
        ;
   font-weight: 700;
+  font-display: swap;
   font-style: normal;
 }
 
 @import "variables.scss";
 @import "mixins.scss";
-@import "body.scss";
+@import "scaffolding.scss";
 @import "blocks/container.scss";
 @import "blocks/button.scss";
 @import "blocks/header.scss";

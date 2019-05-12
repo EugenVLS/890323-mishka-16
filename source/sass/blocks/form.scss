@@ -58,18 +58,16 @@
 .checkbox {
   margin-bottom: 20px;
 
-  input {
-    &:focus + label::before {
+  input:focus + label::before {
         border: 2px solid #62d1ba;
-    }
-
-    &:disabled + label::before {
-        opacity: 0.3;
-    }
   }
 
-  .form__label:hover ::before {
-      border: 2px solid #62d1ba;
+  input:disabled + label::before {
+        opacity: 0.3;
+  }
+
+  .form__label:hover::before {
+    border: 2px solid #62d1ba;
   }
 }
 

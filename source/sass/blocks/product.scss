@@ -29,23 +29,23 @@
 
 .product__buy {
   position: absolute;
-  bottom: 36px;
+  bottom: 41px;
   width: 260px;
 }
 
 .product__image {
-  margin-bottom: 140px;
+  margin-bottom: 121px;
 }
 
 .product__price {
   color: #444444;
   margin: 0;
-  margin-top: 10px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
 .product__inner {
-  padding: 24px 30px 36px 30px;
+  padding: 24px 30px 41px 30px;
 
   @include inner();
   @include wave();

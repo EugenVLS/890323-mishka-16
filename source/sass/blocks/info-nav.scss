@@ -69,6 +69,7 @@
   .info-nav__list {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 
   .info-nav__item {
@@ -85,7 +86,7 @@
   }
 
   .info-nav__link--search {
-    padding: 0 44px;
+    padding: 0 41px;
 
     svg {
       position: absolute;
@@ -108,7 +109,7 @@
 
 @media (min-width: $desktop_width) {
   .info-nav {
-    width: 40%;
+    width: auto;
   }
 
   .info-nav__item.info-nav__item--basket {

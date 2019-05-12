@@ -40,20 +40,23 @@
 }
 
 .modal-size__radio {
-  width: 82px;
-  height: 52px;
-  border: 2px solid rgba(68, 68, 68, 0.1);
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   label {
+    width: 82px;
+    height: 52px;
+    border: 2px solid rgba(68, 68, 68, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #444444;
     font-size: 17px;
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
+  }
+
+  input:checked + label {
+    border: 2px solid #63d1bb;
   }
 }
 
@@ -70,4 +73,29 @@
   opacity: 0.9;
   background-color: #ffffff;
   z-index: 2;
+}
+
+@media (min-width: $tablet_width) {
+  .modal-size {
+    width: 566px;
+    height: 336px;
+    padding: 51px 105px 46px 105px;
+  }
+
+  .modal-size__radio {
+    label {
+      width: 112px;
+      height: 52px;
+    }
+  }
+
+  .modal-size__header {
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 0;
+  }
+
+  .modal-size__text {
+    font-size: 17px;
+  }
 }

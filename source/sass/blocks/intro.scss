@@ -5,10 +5,6 @@
 .intro__inner {
   @include inner();
   padding: 69px 0 0 0;
-
-  @media (min-width: $tablet_width) {
-    padding: 25px 50px 0 50px;
-  }
 }
 
 .intro__title {
@@ -20,7 +16,12 @@
 
 .intro__title.intro__title--catalog {
   margin: 0;
-  padding-bottom: 60px;
+  padding-bottom: 75px;
+}
+
+.intro__title.intro__title--order {
+  margin-bottom: -1px;
+  padding-bottom: 76px;
 }
 
 .intro__label {
@@ -111,18 +112,31 @@
     }
   }
 
+  .intro--catalog {
+    margin-bottom: 73px;
+  }
+
   .intro__inner {
+    padding: 17px 50px 0 50px;
     border-top: 1px solid #ececec;
   }
 
   .intro__title.intro__title--catalog {
-    margin-top: 69px;
+    margin-top: 79px;
+    padding-bottom: 78px;
+  }
+
+  .intro__title.intro__title--order {
+    margin-top: 77px;
+    margin-bottom: 73px;
+    padding-bottom: 80px;
   }
 
   .intro__title {
     position: relative;
-    margin-top: 133px;
+    margin-top: 136px;
     margin-bottom: 374px;
+    letter-spacing: 0;
   }
 
   .intro__label {
@@ -147,7 +161,7 @@
   .menu__link {
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 30px;
+    padding: 26px 73px 30px 36px;
   }
 }
 
@@ -165,6 +179,17 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
+  }
+
+  .intro__title.intro__title--catalog {
+    padding-bottom: 100px;
+    margin-top: 52px;
+  }
+
+  .intro__title.intro__title--order {
+    padding-bottom: 100px;
+    margin-top: 53px;
+    margin-bottom: 123px;
   }
 
   .menu__item {

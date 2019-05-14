@@ -28,8 +28,14 @@
   opacity: 0.3;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet_width) {
   .copyright {
-    padding: 25px 0 0 79px;
+    padding: 26px 0 0 79px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .copyright {
+    padding: 6px 0 0 79px;
   }
 }

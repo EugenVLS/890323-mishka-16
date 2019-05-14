@@ -51,7 +51,7 @@
   @include wave();
 
   @media (min-width: $tablet_width) {
-    padding: 47px 50px 36px 50px;
+    padding: 47px 50px 36px 48px;
   }
 }
 
@@ -59,7 +59,14 @@
   .product__header {
     display: flex;
     justify-content: space-between;
-    padding-right: 34px;
+    padding-right: 28px;
+    margin-bottom: 49px;
+  }
+
+  .product__inner {
+    &::after {
+      bottom: -27px;
+    }
   }
 
   .product__content {
@@ -68,10 +75,11 @@
 
   .product__buy {
     position: inherit;
+    width: 292px;
   }
 
   .product__info {
-    padding: 0 50px 0 0;
+    padding: 0 44px 0 0;
   }
 
   .product__name {
@@ -81,7 +89,7 @@
   .product__price {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   .product__description {
@@ -92,11 +100,12 @@
   }
 
   .product__properties {
-    margin-bottom: 46px;
+    margin-bottom: 53px;
   }
 
   .product__image {
     margin-bottom: 0;
+    margin-top: 8px;
   }
 
   .product__image img {
@@ -114,17 +123,18 @@
 @media (min-width: $desktop_width) {
   .product__header {
     position: absolute;
-    top: 124px;
-    left: 69px;
+    top: 125px;
+    left: 66px;
     flex-direction: row-reverse;
     padding-left: 30px;
   }
 
   .product__info {
     width: 482px;
-    padding-left: 160px;
-    padding-right: 30px;
-    padding-top: 130px;
+    padding-left: 164px;
+    padding-right: 26px;
+    padding-top: 166px;
+    margin-right: 32px;
   }
 
   .promo .promo__label {
@@ -133,7 +143,10 @@
   }
 
   .product__inner {
-    padding: 73px 50px 36px 61px;
+    padding: 65px 50px 36px 61px;
+    &:after {
+      bottom: -50px;
+    }
   }
 
   .product__description {

@@ -10,7 +10,7 @@
   border: 1px solid #c6c6c6;
   background-color: #ffffff;
   z-index: 10;
-  padding: 36px 30px 46px 30px;
+  padding: 28px 30px 46px 30px;
 }
 
 .modal-size__header {
@@ -21,7 +21,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .modal-size__text {
@@ -37,6 +37,7 @@
 .modal-size__btns {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4px;
 }
 
 .modal-size__radio {
@@ -79,7 +80,7 @@
   .modal-size {
     width: 566px;
     height: 336px;
-    padding: 51px 105px 46px 105px;
+    padding: 31px 105px 46px 105px;
   }
 
   .modal-size__radio {
@@ -92,10 +93,15 @@
   .modal-size__header {
     font-size: 30px;
     line-height: 57px;
-    margin-bottom: 0;
+    margin-bottom: 14px;
   }
 
   .modal-size__text {
     font-size: 17px;
+    margin-bottom: 23px;
+  }
+
+  .modal-size__btns {
+    margin-bottom: 7px;
   }
 }

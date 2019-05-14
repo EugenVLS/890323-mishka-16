@@ -24,13 +24,19 @@
   opacity: 0.3;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet_width) {
   .social {
     padding-bottom: 0;
-    padding-top: 16px;
+    padding-top: 35px;
   }
 
   .social__list {
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .social {
+    padding-top: 21px;
   }
 }

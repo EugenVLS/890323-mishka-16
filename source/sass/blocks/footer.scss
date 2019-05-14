@@ -20,16 +20,16 @@
 
   @include inner();
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet_width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet_width) {
   .footer__inner {
-    padding: 38px 30px 25px 11px;
+    padding: 28px 30px 54px 0px;
     justify-content: flex-start;
   }
 
@@ -46,7 +46,7 @@
 
 @media (min-width: $desktop_width) {
   .footer__inner {
-    padding: 38px 50px 25px 51px;
+    padding: 43px 50px 47px 51px;
   }
 
   .footer__logo {

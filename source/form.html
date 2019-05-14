@@ -55,10 +55,20 @@
     </div>
   </header>
   <main class="main">
-    <section class="intro intro--catalog">
+    <section class="intro intro--order">
       <div class="intro__inner">
+          <ul class="promo-nav">
+              <li class="promo-nav__item">
+                <a href="#" class="promo-nav__link">
+                  Новые поступления</a>
+              </li>
+              <li class="promo-nav__item">
+                <a href="#" class="promo-nav__link">
+                  Распродажа</a>
+              </li>
+            </ul>
         <p class="intro__label">Бесплатная доставка по России</p>
-        <h1 class="block-title intro__title intro__title--catalog">Вязание на заказ</h1>
+        <h1 class="block-title intro__title intro__title--order">Вязание на заказ</h1>
       </div>
     </section>
     <section class="form">
@@ -72,7 +82,7 @@
           <div class="fieldset__controls">
             <div class="radio">
               <input class="visually-hidden" type="radio" id="radio1" name="type" value="interier" checked="">
-              <label class="form__label" for="radio1">Аксессуар для интерьера</label>
+              <label class="form__label form__label--accessories" for="radio1">Аксессуар для интерьера</label>
             </div>
             <div class="radio">
               <input class="visually-hidden" type="radio" id="radio2" name="type" value="toy">
@@ -81,7 +91,7 @@
           </div>
         </div>
         <div class="fieldset-wrapper">
-          <div class="fieldset">
+          <div class="fieldset fieldset--checkboxes">
             <span class="form__label form__label--green fieldset__legend">Цвет</span>
             <div class="fieldset__controls fieldset__controls--flex">
               <div class="checkbox">
@@ -111,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="fieldset">
+        <div class="fieldset fieldset--fio">
           <span class="form__label form__label--green fieldset__legend">ФИО</span>
           <div class="fieldset__controls">
             <div class="input input--type-1">
@@ -129,7 +139,7 @@
           </div>
         </div>
         <div class="fieldset-wrapper">
-          <div class="fieldset">
+          <div class="fieldset fieldset--inputs-type-2">
             <div class="fieldset__controls fieldset__controls--flex fieldset__controls--fullwidth">
               <div class="input input--type-2 input--phone">
                 <label for="user-phone" class="form__label form__label--green">тел</label>

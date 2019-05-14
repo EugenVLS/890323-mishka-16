@@ -55,6 +55,7 @@
   border-bottom: 1px solid #62d1ba;
   color: #444444;
   text-decoration: none;
+
   &:hover,
   &:focus {
     color: #46c1ae;
@@ -97,6 +98,7 @@
   }
 
   .contacts__map {
+    margin-bottom: 107px;
     position: relative;
     width: 768px;
     height: 457px;
@@ -108,15 +110,13 @@
     }
   }
 
-  .contacts__table {
-    margin-bottom: 26px;
-  }
-
   .contacts__table tbody {
     display: flex;
   }
 
   .contacts__table {
+    margin-bottom: 26px;
+
     tr:first-child {
       margin-right: 49px;
     }
@@ -143,10 +143,6 @@
     bottom: 56px;
     transform: translateX(-50%);
     margin: 0 auto;
-  }
-
-  .contacts__map {
-    margin-bottom: 107px;
   }
 }
 

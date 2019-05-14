@@ -67,11 +67,11 @@
   margin-bottom: 21px;
 
   input:focus + label::before {
-        border: 2px solid #62d1ba;
+    border: 2px solid #62d1ba;
   }
 
   input:disabled + label::before {
-        opacity: 0.3;
+    opacity: 0.3;
   }
 
   .form__label:hover::before {
@@ -323,25 +323,23 @@
   .checkbox .form__label,
   .radio .form__label {
     height: 52px;
+    padding-left: 82px;
 
     &::before {
       width: 52px;
     }
   }
 
-  .radio input:checked+.form__label::after {
+  .radio input:checked + .form__label::after {
     width: 22px;
     height: 22px;
     top: 26px;
     left: 26px;
   }
 
-  .checkbox input:checked+.form__label::after {
+  .checkbox input:checked + .form__label::after {
     left: 26px;
     top: 26px;
-  }
-
-  .checkbox input:checked + .form__label::after {
     width: 33px;
     height: 22px;
   }
@@ -380,6 +378,8 @@
   }
 
   .input input {
+    padding: 18px 0 18px 18px;
+
     &::placeholder {
       opacity: 0.3;
       color: #444444;
@@ -418,26 +418,20 @@
     }
   }
 
-  .checkbox, .radio {
+  .checkbox,
+  .radio {
     margin-bottom: 24px;
   }
 
   .form__label--accessories {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
-  .checkbox .form__label, .radio .form__label {
-    padding-left: 82px;
-  }
   .input {
     display: flex;
 
     .form__label {
       margin-right: 25px;
-    }
-
-    input {
-      padding: 18px 0 18px 18px;
     }
   }
 
@@ -490,7 +484,7 @@
     width: 168px;
   }
 
-  .form__button  {
+  .form__button {
     width: 230px;
   }
 }
@@ -502,10 +496,6 @@
 
   .fieldset__controls {
     width: 700px;
-
-    .checkbox {
-      width: 33.333333%;
-    }
   }
 
   .fieldset--checkboxes {

@@ -144,7 +144,8 @@
 
   .product__inner {
     padding: 65px 50px 36px 61px;
-    &:after {
+
+    &::after {
       bottom: -50px;
     }
   }

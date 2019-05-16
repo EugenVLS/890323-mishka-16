@@ -5,9 +5,9 @@
 .info-nav__item {
   display: flex;
   justify-content: start;
-  padding-top: 32px;
-  padding-left: 36px;
-  height: 88px;
+  padding-top: 27px;
+  padding-left: 30px;
+  height: 79px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -27,7 +27,6 @@
 }
 
 .info-nav__link--basket {
-
   svg {
     top: 0;
   }
@@ -71,6 +70,7 @@
     padding-left: 0;
     padding-top: 32px;
     border-bottom: none;
+    height: 88px;
   }
 
   .info-nav__item.info-nav__item--search {

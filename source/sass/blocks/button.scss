@@ -2,9 +2,9 @@
   text-align: center;
   display: block;
   padding: 14px 0;
-  border: 2px solid #444444;
+  border: 2px solid $grey;
   background-color: #ffffff;
-  color: #444444;
+  color: $grey;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -21,7 +21,7 @@
   transition: transform 0.1s;
   width: 101px;
   height: 77px;
-  background-image: url("../img/icon-play.svg");
+  background-image: url("../img/icons/icon-play.svg");
   background-color: transparent;
   border: none;
   outline: none;
@@ -38,12 +38,12 @@
 
 .button--black-border:hover,
 .button--black-border:focus {
-  background-color: #444444;
+  background-color: $grey;
   color: #ffffff;
 }
 
 .button--black-border:active {
-  background-color: #444444;
+  background-color: $grey;
   color: rgba(255, 255, 255, 0.3);
 }
 

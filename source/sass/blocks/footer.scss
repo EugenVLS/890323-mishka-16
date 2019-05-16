@@ -6,12 +6,15 @@
   display: none;
 }
 
-.footer__logo:hover svg,
-.footer__logo:focus svg {
-  fill: #46c1ae;
+.footer__logo-icon {
+  color: #000000;
+}
+.footer__logo:hover .footer__logo-icon,
+.footer__logo:focus .footer__logo-icon {
+  color: #46c1ae;
 }
 
-.footer__logo:active svg {
+.footer__logo:active .footer__logo-icon {
   opacity: 0.3;
 }
 

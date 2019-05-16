@@ -5,7 +5,7 @@
 }
 
 .form__text {
-  color: #444444;
+  color: $grey;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -24,7 +24,7 @@
   margin-bottom: 24px;
 }
 
-.fieldset--fio .fieldset__legend {
+.fieldset--names .fieldset__legend {
   margin-bottom: 31px;
 }
 
@@ -100,7 +100,7 @@
     width: 40px;
     height: 100%;
     border-radius: 50%;
-    border: 2px solid #444444;
+    border: 2px solid $grey;
     background-color: #ffffff;
   }
 }
@@ -129,7 +129,7 @@
     top: 0;
     width: 40px;
     height: 100%;
-    border: 2px solid #444444;
+    border: 2px solid $grey;
     background-color: #ffffff;
   }
 }
@@ -144,7 +144,7 @@
   height: 16px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/icons/icon-tick.svg");
 }
 
 .input {
@@ -160,7 +160,7 @@
   width: 100%;
   height: 52px;
   box-shadow: inset 0 -2px 0 #000000;
-  color: #444444;
+  color: $grey;
   font-size: 19px;
   line-height: 18px;
   outline: none;
@@ -171,15 +171,9 @@
     box-shadow: inset 0 -2px 0 #62d1ba;
   }
 
-  &:hover + svg,
-  &:focus + svg {
-    fill: #62d1ba;
-    opacity: 1;
-  }
-
   &::placeholder {
     opacity: 0.3;
-    color: #444444;
+    color: $grey;
     font-size: 17px;
     line-height: 18px;
   }
@@ -210,10 +204,10 @@
 .textarea textarea {
   width: 260px;
   height: 142px;
-  border: 2px solid #444444;
+  border: 2px solid $grey;
   background-color: #ffffff;
   padding: 15px;
-  color: #444444;
+  color: $grey;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -238,7 +232,7 @@
   margin: 0;
   margin-bottom: 33px;
   height: 14px;
-  color: #444444;
+  color: $grey;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -254,6 +248,16 @@
   margin: 0 auto;
 }
 
+.fieldset__icon {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.input input:hover + .fieldset__icon,
+.input input:focus + .fieldset__icon,
+.input input:active + .fieldset__icon {
+  color: rgba(98, 209, 186, 1);
+}
+
 .input--phone {
   position: relative;
 
@@ -264,8 +268,6 @@
     top: 63%;
     right: 8px;
     transform: translateY(-50%);
-    fill: #000000;
-    opacity: 0.2;
   }
 }
 
@@ -279,8 +281,6 @@
     top: 65%;
     right: 4px;
     transform: translateY(-50%);
-    fill: #000000;
-    opacity: 0.2;
   }
 }
 
@@ -308,11 +308,11 @@
     padding: 49px 50px 50px;
   }
 
-  .fieldset--inputs-type-2 {
+  .fieldset--contact {
     padding: 43px 50px 50px;
   }
 
-  .fieldset--inputs-type-2 .input--type-2 {
+  .fieldset--contact .input--type-2 {
     margin-bottom: 19px;
   }
 
@@ -382,7 +382,7 @@
 
     &::placeholder {
       opacity: 0.3;
-      color: #444444;
+      color: $grey;
       font-size: 19px;
       line-height: 18px;
     }
@@ -459,7 +459,7 @@
 
   .warning {
     margin-bottom: 20px;
-    color: #444444;
+    color: $grey;
     font-size: 17px;
     line-height: 30px;
   }
@@ -502,7 +502,7 @@
     padding-bottom: 27px;
   }
 
-  .fieldset--fio {
+  .fieldset--names {
     padding: 50px;
   }
 
@@ -543,7 +543,7 @@
     padding-left: 110px;
   }
 
-  .fieldset--inputs-type-2 {
+  .fieldset--contact {
     padding: 46px 50px 50px 110px;
   }
 

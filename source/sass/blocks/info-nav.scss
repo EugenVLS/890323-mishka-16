@@ -13,10 +13,24 @@
 
 
 .info-nav__link {
+  position: relative;
   padding-left: 46px;
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 4px;
+  }
+}
+
+.info-nav__link--basket {
+
+  svg {
+    top: 0;
+  }
 }
 
 .info-nav__link:hover,
@@ -28,37 +42,18 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.info-nav__link:hover svg,
-.info-nav__link:focus svg {
-  fill: #63d1bb;
+.info-nav__link:hover .info-nav__icon,
+.info-nav__link:focus .info-nav__icon {
+  color: rgba(99, 209, 187, 1);
   opacity: 1;
 }
 
 .info-nav__link:active svg {
-  fill: #63d1bb;
-  opacity: 0.3;
+  color: rgba(99, 209, 187, 0.3);
 }
 
-.info-nav__link--search {
-  position: relative;
-
-  svg {
-    position: absolute;
-    left: 0;
-    top: 4px;
-    opacity: 0.2;
-  }
-}
-
-.info-nav__link--basket {
-  position: relative;
-
-  svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.2;
-  }
+.info-nav__link .info-nav__icon {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: $tablet_width) {
@@ -92,7 +87,6 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      opacity: 0.2;
       transform: translateX(-50%) translateY(-50%);
     }
   }
@@ -102,7 +96,7 @@
     padding-left: 32px;
   }
 
-  .info-nav__link--search span {
+  .search-text {
     display: none;
   }
 }

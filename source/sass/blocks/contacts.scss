@@ -39,7 +39,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
-  color: #444444;
+  color: $grey;
 }
 
 .contacts__table td:first-child {
@@ -53,7 +53,7 @@
 
 .contacts__data--email {
   border-bottom: 1px solid #62d1ba;
-  color: #444444;
+  color: $grey;
   text-decoration: none;
 
   &:hover,
@@ -85,7 +85,7 @@
       height: 82px;
       top: 62px;
       right: 53px;
-      background-image: url("../img/icon-flag.svg");
+      background-image: url("../img/icons/icon-flag.svg");
     }
   }
 

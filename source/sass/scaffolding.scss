@@ -9,11 +9,6 @@ body {
   line-height: 24px;
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-
 .visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -48,6 +43,10 @@ html {
 
 .content-box-component {
   box-sizing: content-box;
+}
+
+.icon svg {
+  fill: currentColor;
 }
 
 @media (min-width: $tablet_width) and (max-width: $desktop_width) {

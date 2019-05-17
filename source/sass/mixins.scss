@@ -19,7 +19,7 @@
     left: 0;
     background-repeat: repeat-x;
     background-size: contain;
-    background-image: url("../img/bg-zigzag-line.svg");
+    background-image: url("../img/icons/bg-zigzag-line.svg");
 
     @media (min-width: $tablet_width) {
       height: 17px;
@@ -27,6 +27,8 @@
 
     @media (min-width: $desktop_width) {
       height: 23px;
+      max-width: 1052px;
+      margin-left: 50px;
     }
   }
 }

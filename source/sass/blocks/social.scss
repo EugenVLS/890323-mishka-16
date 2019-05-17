@@ -1,0 +1,46 @@
+.social {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 16px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: flex-start;
+
+  @include list_reset();
+  padding-left: 57px;
+}
+
+.social__item {
+  margin-right: 40px;
+}
+
+.social-icon {
+  color: #000000;
+}
+
+.social__link:focus .social-icon,
+.social__link:hover .social-icon {
+  color: #46c1ae;
+}
+
+.social__link:active .social-icon {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet_width) {
+  .social {
+    padding-bottom: 0;
+    padding-top: 35px;
+  }
+
+  .social__list {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .social {
+    padding-top: 21px;
+  }
+}

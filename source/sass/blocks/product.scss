@@ -1,0 +1,165 @@
+.product__name {
+  margin: 0;
+}
+
+.product__header {
+  margin-bottom: 23px;
+}
+
+.product__description {
+  margin-bottom: 13px;
+  font-size: 15px;
+  font-weight: 400;
+  color: $grey;
+}
+
+.product__properties {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: $grey;
+  margin-bottom: 26px;
+
+  tr {
+    box-shadow: 0 1px 0 #ececec;
+    height: 40px;
+  }
+}
+
+.product__buy {
+  position: absolute;
+  bottom: 41px;
+  width: 260px;
+}
+
+.product__image {
+  margin-bottom: 121px;
+}
+
+.product__price {
+  color: $grey;
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.product__inner {
+  padding: 24px 30px 41px 30px;
+
+  @include inner();
+  @include wave();
+
+  @media (min-width: $tablet_width) {
+    padding: 47px 50px 36px 48px;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .product__header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 28px;
+    margin-bottom: 49px;
+  }
+
+  .product__inner {
+    &::after {
+      bottom: -27px;
+    }
+  }
+
+  .product__content {
+    display: flex;
+  }
+
+  .product__buy {
+    position: inherit;
+    width: 292px;
+  }
+
+  .product__info {
+    padding: 0 44px 0 0;
+  }
+
+  .product__name {
+    margin-right: 10px;
+  }
+
+  .product__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
+  }
+
+  .product__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 31px;
+  }
+
+  .product__properties {
+    margin-bottom: 53px;
+  }
+
+  .product__image {
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .product__image img {
+    width: 333px;
+    height: 404px;
+  }
+
+  .promo .promo__label {
+    width: 70px;
+    margin-top: 9px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .product__header {
+    position: absolute;
+    top: 125px;
+    left: 66px;
+    flex-direction: row-reverse;
+    padding-left: 30px;
+  }
+
+  .product__info {
+    width: 482px;
+    padding-left: 164px;
+    padding-right: 26px;
+    padding-top: 166px;
+    margin-right: 32px;
+  }
+
+  .promo .promo__label {
+    margin-right: 50px;
+    margin-top: 13px;
+  }
+
+  .product__inner {
+    padding: 65px 50px 36px 61px;
+
+    &::after {
+      bottom: -50px;
+    }
+  }
+
+  .product__description {
+    margin-bottom: 44px;
+  }
+
+  .product__properties {
+    margin-bottom: 107px;
+  }
+
+  .product__image img {
+    width: 525px;
+    height: 636px;
+  }
+}

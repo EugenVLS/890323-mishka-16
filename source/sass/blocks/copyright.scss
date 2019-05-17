@@ -1,0 +1,41 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 0 38px;
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  margin-right: 29px;
+}
+
+.copyright__link {
+  line-height: 1px;
+
+  svg {
+    fill: #63d1bb;
+  }
+}
+
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: #46c1ae;
+}
+
+.copyright__link:active svg {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet_width) {
+  .copyright {
+    padding: 26px 0 0 79px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .copyright {
+    padding: 6px 0 0 79px;
+  }
+}

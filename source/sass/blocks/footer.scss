@@ -10,12 +10,12 @@
   color: #000000;
 }
 
-.footer__logo:hover .footer__logo-icon,
-.footer__logo:focus .footer__logo-icon {
+.footer__logo:hover,
+.footer__logo:focus {
   color: #46c1ae;
 }
 
-.footer__logo:active .footer__logo-icon {
+.footer__logo:active {
   opacity: 0.3;
 }
 

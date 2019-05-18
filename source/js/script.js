@@ -39,7 +39,7 @@
       });
       pointer = new ymaps.Placemark([59.938631, 30.323055], {}, {
         iconLayout: 'default#image',
-        iconImageHref: 'img/icon-map-pin.svg',
+        iconImageHref: 'img/icons/icon-map-pin.svg',
         iconImageSize: [66, 101],
         iconOffset: [-33, -50.5]
       });

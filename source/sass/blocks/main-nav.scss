@@ -20,6 +20,12 @@
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  box-sizing: border-box;
 }
 
 .main-nav__link:hover,
@@ -29,17 +35,6 @@
 
 .main-nav__link:active {
   opacity: 0.3;
-}
-
-.search__input {
-  border: none;
-
-  &::placeholder {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #000000;
-  }
 }
 
 .main-nav__item--new,

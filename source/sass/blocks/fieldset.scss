@@ -1,0 +1,91 @@
+.fieldset {
+  padding: 15px 30px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.fieldset__legend {
+  margin-bottom: 24px;
+}
+
+.fieldset--names .fieldset__legend {
+  margin-bottom: 31px;
+}
+
+.fieldset__icon {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: $tablet_width) {
+  .fieldset {
+    display: flex;
+    align-items: flex-start;
+    width: $tablet_width;
+    padding: 47px 50px 51px;
+  }
+
+  .fieldset--checkboxes {
+    padding: 49px 50px 50px;
+  }
+
+  .fieldset--contact {
+    padding: 43px 50px 50px;
+  }
+
+  .fieldset--contact .input--type-2 {
+    margin-bottom: 19px;
+  }
+
+  .fieldset-wrapper {
+    background-color: #f1f1f1;
+  }
+
+  .fieldset__controls--flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fieldset__controls.fieldset__controls--fullwidth {
+    width: 815px;
+
+    input {
+      width: 501px;
+    }
+  }
+
+  .fieldset__controls {
+    width: 518px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .fieldset {
+    width: $desktop_width;
+    padding-left: 110px;
+  }
+
+  .fieldset--contact {
+    padding: 46px 50px 50px 110px;
+  }
+
+  .fieldset__controls {
+    width: 700px;
+  }
+
+  .fieldset--checkboxes {
+    padding-bottom: 27px;
+  }
+
+  .fieldset--checkboxes .fieldset__controls {
+    width: 790px;
+  }
+
+  .fieldset__controls.fieldset__controls--fullwidth {
+    width: 815px;
+
+    input {
+      width: 700px;
+    }
+  }
+}
+

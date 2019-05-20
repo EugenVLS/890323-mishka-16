@@ -123,19 +123,19 @@
   }
 
   .intro__title.intro__title--catalog {
-    margin-top: 79px;
+    margin-top: 54px;
     padding-bottom: 78px;
   }
 
   .intro__title.intro__title--order {
-    margin-top: 77px;
+    margin-top: 53px;
     margin-bottom: 73px;
     padding-bottom: 80px;
   }
 
   .intro__title {
     position: relative;
-    margin-top: 136px;
+    margin-top: 112px;
     margin-bottom: 374px;
     letter-spacing: 0;
     font-size: $tablet-fs-big;
@@ -144,7 +144,7 @@
 
   .intro__label {
     display: block;
-    position: absolute;
+    text-align: right;
     top: 18px;
     right: 51px;
     margin: 0;
@@ -184,6 +184,10 @@
     }
   }
 
+  .intro--catalog {
+    margin-bottom: 130px;
+  }
+
   .intro__title.intro__title--catalog {
     padding-bottom: 100px;
     margin-top: 52px;
@@ -197,6 +201,11 @@
 
   .menu__item {
     width: 525px;
+  }
+
+  .intro__header {
+    display: flex;
+    justify-content: space-between;
   }
 
   .intro__title {

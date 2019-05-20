@@ -13,6 +13,10 @@
   padding: 28px 30px 46px 30px;
 }
 
+.modal-size.show {
+  display: block;
+}
+
 .modal-size__header {
   color: #000000;
   font-size: 25px;
@@ -61,10 +65,6 @@
   }
 }
 
-.show {
-  display: block;
-}
-
 .modal-open {
   position: fixed;
   top: 0;
@@ -102,6 +102,6 @@
   }
 
   .modal-size__btns {
-    margin-bottom: 7px;
+    margin-bottom: 30px;
   }
 }

@@ -4,7 +4,7 @@
 
 .info-nav__item {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   padding-top: 27px;
   padding-left: 30px;
   height: 79px;
@@ -20,9 +20,6 @@
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
   box-sizing: border-box;
 
   svg {

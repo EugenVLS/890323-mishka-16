@@ -18,18 +18,18 @@
     });
     for (var i = 0; i < addBtn.length; i++) {
       addBtn[i].addEventListener('click', function () {
-        modalSize.classList.remove('show');
+        modalSize.classList.remove('modal-size--show');
         overlay.classList.remove('modal-open');
       });
     }
     for (var i = 0; i < basket.length; i++) {
       basket[i].addEventListener('click', function () {
-        modalSize.classList.add('show');
+        modalSize.classList.add('modal-size--show');
         overlay.classList.add('modal-open');
       });
     }
     orderBtn.addEventListener('click', function () {
-      modalSize.classList.add('show');
+      modalSize.classList.add('modal-size--show');
       overlay.classList.add('modal-open');
     });
     ymaps.ready(function () {

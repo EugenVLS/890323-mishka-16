@@ -40,55 +40,6 @@
   }
 }
 
-.menu__list {
-  @include list_reset();
-}
-
-.menu__link {
-  position: relative;
-  padding: 26px 73px 30px 29px;
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 19px;
-
-  &--decor {
-    background-color: #63d1bb;
-  }
-
-  &--toys {
-    background-color: #56c3b2;
-  }
-}
-
-.menu__link:hover,
-.menu__link:focus {
-  position: relative;
-  top: -5px;
-  height: calc(100% + 5px);
-}
-
-.menu__link:hover svg,
-.menu__link:focus svg {
-  opacity: 0.7;
-}
-
-.menu__link:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.menu__link:active svg {
-  opacity: 0.3;
-}
-
-.menu__link svg {
-  position: absolute;
-  top: 30px;
-  right: 36px;
-  fill: #149080;
-  opacity: 0.5;
-}
-
 @media (min-width: $tablet_width) {
   .intro {
     position: relative;
@@ -152,20 +103,6 @@
     line-height: 24px;
     font-weight: 400;
   }
-
-  .menu__item {
-    width: 50%;
-  }
-
-  .menu__list {
-    display: flex;
-  }
-
-  .menu__link {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 26px 73px 30px 36px;
-  }
 }
 
 @media (min-width: $desktop_width) {
@@ -197,10 +134,6 @@
     padding-bottom: 100px;
     margin-top: 53px;
     margin-bottom: 123px;
-  }
-
-  .menu__item {
-    width: 525px;
   }
 
   .intro__header {

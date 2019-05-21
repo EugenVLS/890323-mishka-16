@@ -94,6 +94,10 @@
   .header--nojs .info-nav {
     display: block;
   }
+
+  .header--nojs .header__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet_width) and (max-width: $desktop_width) {

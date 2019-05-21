@@ -20,6 +20,9 @@
   font-size: 15px;
   line-height: 24px;
   text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
 }
 
 .promo-nav__link:hover,
@@ -32,17 +35,6 @@
 }
 
 @media (min-width: $desktop_width) {
-  .main-nav__item--new,
-  .main-nav__item--sale {
-    display: flex;
-    justify-content: start;
-    width: 203px;
-    padding: 0;
-    order: 6;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
   .promo-nav__link {
     font-size: 15px;
   }

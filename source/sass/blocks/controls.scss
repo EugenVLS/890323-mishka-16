@@ -1,0 +1,30 @@
+.controls__item {
+  height: 100%;
+  width: 50%;
+  border: 1px solid #ececec;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 50%;
+  background-image: url("../img/icons/icon-left-arrow.svg");
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.controls__item--arrow-right {
+  transform: rotate(180deg);
+  border-right: none;
+}
+
+@media (min-width: $tablet_width) {
+  .controls__item {
+    border: none;
+  }
+}

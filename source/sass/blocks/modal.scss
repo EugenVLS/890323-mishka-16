@@ -13,6 +13,10 @@
   padding: 28px 30px 46px 30px;
 }
 
+.modal-size--show {
+  display: block;
+}
+
 .modal-size__header {
   color: #000000;
   font-size: 25px;
@@ -37,7 +41,7 @@
 .modal-size__btns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4px;
+  margin-bottom: 30px;
 }
 
 .modal-size__radio {
@@ -59,10 +63,6 @@
   input:checked + label {
     border: 2px solid #63d1bb;
   }
-}
-
-.show {
-  display: block;
 }
 
 .modal-open {
@@ -99,9 +99,5 @@
   .modal-size__text {
     font-size: 17px;
     margin-bottom: 23px;
-  }
-
-  .modal-size__btns {
-    margin-bottom: 7px;
   }
 }

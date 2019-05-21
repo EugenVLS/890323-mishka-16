@@ -49,10 +49,16 @@ html {
   fill: currentColor;
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop_width) {
-  body {
-    padding-top: 88px;
-  }
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.no-top-padding {
+  padding-top: 0;
+}
+
+.show {
+  display: block;
 }
 
 @media (min-width: $tablet_width) {

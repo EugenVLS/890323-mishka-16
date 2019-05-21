@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <script defer src="js/picturefill.min.js"></script>
 </head>
@@ -62,17 +64,19 @@
   <main class="main">
     <section class="intro">
       <div class="intro__inner">
-        <ul class="promo-nav">
-          <li class="promo-nav__item">
-            <a href="#" class="promo-nav__link">
-              Новые поступления</a>
-          </li>
-          <li class="promo-nav__item">
-            <a href="#" class="promo-nav__link">
-              Распродажа</a>
-          </li>
-        </ul>
-        <p class="intro__label">Бесплатная доставка по России</p>
+        <div class="intro__header">
+          <ul class="promo-nav">
+            <li class="promo-nav__item">
+              <a href="#" class="promo-nav__link">
+                Новые поступления</a>
+            </li>
+            <li class="promo-nav__item">
+              <a href="#" class="promo-nav__link">
+                Распродажа</a>
+            </li>
+          </ul>
+          <p class="intro__label">Бесплатная доставка по России</p>
+        </div>
         <h1 class="block-title intro__title intro__title--catalog">Каталог товаров</h1>
       </div>
     </section>
@@ -101,7 +105,7 @@
             <p class="catalog__item-properties">Рост 30 см, вес 200 г</p>
             <div class="catalog__item-buy-block">
               <p class="catalog__item-price">1 200 руб.</p>
-              <a href="#" class="catalog__link catalog-icon icon">
+              <a href="#" class="catalog__link catalog-icon icon" aria-label="кнопка корзины">
                 <svg width="20" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -132,7 +136,7 @@
             <p class="catalog__item-properties">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__item-buy-block">
               <p class="catalog__item-price">690 руб.</p>
-              <a href="#" class="catalog__link catalog-icon icon">
+              <a href="#" class="catalog__link catalog-icon icon" aria-label="кнопка корзины">
                 <svg width="20" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -163,7 +167,7 @@
             <p class="catalog__item-properties">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__item-buy-block">
               <p class="catalog__item-price">1 500 руб.</p>
-              <a href="#" class="catalog__link catalog-icon icon">
+              <a href="#" class="catalog__link catalog-icon icon" aria-label="кнопка корзины">
                 <svg width="20" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -191,7 +195,7 @@
             </div>
           </div>
           <div class="video__play">
-            <button class="video-play-button button"></button>
+            <button type="button" class="video-play-button button" aria-label="запустить видео"></button>
             <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                 srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
@@ -269,7 +273,7 @@
         <label for="radio6">L</label>
       </div>
     </div>
-    <button class="button btn-add button--green">Добавить</button>
+    <button type="button" class="button btn-add button--green">Добавить</button>
   </section>
   <div class="overlay"></div>
   <script src="js/script.js"></script>

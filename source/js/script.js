@@ -1,9 +1,9 @@
     var header = document.querySelector('.header');
     var navToggle = document.querySelector('.header__toggle');
     var orderBtn = document.querySelector('.product__order-link');
-    var modalSize = document.querySelector('.modal-size');
+    var modalSize = document.querySelector('.modal');
     var overlay = document.querySelector('.overlay');
-    var addBtn = document.querySelectorAll('.btn-add');
+    var addBtn = document.querySelectorAll('.modal__btn');
     var basket = document.querySelectorAll('.catalog-icon');
     header.classList.remove('header--nojs');
 
@@ -18,19 +18,19 @@
     });
     for (var i = 0; i < addBtn.length; i++) {
       addBtn[i].addEventListener('click', function () {
-        modalSize.classList.remove('modal-size--show');
-        overlay.classList.remove('modal-open');
+        modalSize.classList.remove('modal--show');
+        overlay.classList.remove('modal--open');
       });
     }
     for (var i = 0; i < basket.length; i++) {
       basket[i].addEventListener('click', function () {
-        modalSize.classList.add('modal-size--show');
-        overlay.classList.add('modal-open');
+        modalSize.classList.add('modal--show');
+        overlay.classList.add('modal--open');
       });
     }
     orderBtn.addEventListener('click', function () {
-      modalSize.classList.add('modal-size--show');
-      overlay.classList.add('modal-open');
+      modalSize.classList.add('modal--show');
+      overlay.classList.add('modal--open');
     });
     ymaps.ready(function () {
       var map = new ymaps.Map("map", {

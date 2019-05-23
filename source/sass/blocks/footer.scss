@@ -4,9 +4,6 @@
 
 .footer__logo {
   display: none;
-}
-
-.footer__logo-icon {
   color: #000000;
 }
 
@@ -33,31 +30,22 @@
 
 @media (min-width: $tablet_width) {
   .footer__inner {
-    padding: 28px 30px 54px 0;
-    justify-content: flex-start;
+    padding: 28px 50px 54px 50px;
+    justify-content: space-between;
   }
 
   .footer__logo {
     display: block;
-    margin-right: 160px;
+    padding-left: 0;
   }
 
   .footer__social.social {
     border: none;
-    width: 142px;
   }
 }
 
 @media (min-width: $desktop_width) {
   .footer__inner {
     padding: 43px 50px 47px 51px;
-  }
-
-  .footer__logo {
-    margin-right: 350px;
-  }
-
-  .footer__social.social {
-    margin-right: 192px;
   }
 }

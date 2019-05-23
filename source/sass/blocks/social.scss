@@ -5,6 +5,7 @@
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
 
   @include list_reset();
@@ -15,7 +16,7 @@
   margin-right: 40px;
 }
 
-.social-icon {
+.social__link {
   color: #000000;
 }
 
@@ -32,6 +33,7 @@
   .social {
     padding-bottom: 0;
     padding-top: 35px;
+    padding-left: 118px;
   }
 
   .social__list {

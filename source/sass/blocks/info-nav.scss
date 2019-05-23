@@ -5,10 +5,11 @@
 .info-nav__item {
   display: flex;
   justify-content: flex-start;
-  padding-top: 27px;
+  align-items: center;
   padding-left: 30px;
-  height: 79px;
+  min-height: 79px;
   border-bottom: 1px solid #ececec;
+  overflow: hidden;
 }
 
 
@@ -18,8 +19,6 @@
   text-decoration: none;
   color: #000000;
   cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
   box-sizing: border-box;
 
   svg {
@@ -71,7 +70,6 @@
 
   .info-nav__item {
     padding-left: 0;
-    padding-top: 32px;
     border-bottom: none;
     height: 88px;
   }
@@ -103,7 +101,7 @@
     padding-left: 32px;
   }
 
-  .info-nav__link .search-text {
+  .info-nav__link .info-nav__text {
     display: none;
   }
 }
@@ -114,6 +112,7 @@
   }
 
   .info-nav__item.info-nav__item--basket {
+    width: 266px;
     padding-left: 31px;
     padding-right: 0;
     justify-content: flex-end;

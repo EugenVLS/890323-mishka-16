@@ -8,10 +8,11 @@
 
 .main-nav__item {
   display: flex;
+  overflow: hidden;
   justify-content: flex-start;
   align-items: center;
   padding-left: 76px;
-  height: 79px;
+  min-height: 79px;
   width: 320px;
   border-bottom: 1px solid #ececec;
 }
@@ -20,8 +21,6 @@
   text-decoration: none;
   color: #000000;
   cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
   box-sizing: border-box;
 }
 
@@ -79,7 +78,8 @@
   }
 
   .main-nav__list .main-nav__item {
-    padding-top: 30px;
+    padding-top: 0;
+    align-items: center;
   }
 
   .main-nav__item {

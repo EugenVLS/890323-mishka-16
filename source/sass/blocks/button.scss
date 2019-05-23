@@ -13,29 +13,6 @@
   outline: none;
 }
 
-.video-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  transition: transform 0.1s;
-  width: 101px;
-  height: 77px;
-  background-image: url("../img/icons/icon-play.svg");
-  background-color: transparent;
-  border: none;
-  outline: none;
-
-  &:hover {
-    transform: translateX(-50%) translateY(-50%) scale(1.2);
-  }
-
-  &:active {
-    transform: translateX(-50%) translateY(-50%) scale(0.8);
-    opacity: 0.3;
-  }
-}
-
 .button--black-border:hover,
 .button--black-border:focus {
   background-color: $grey;

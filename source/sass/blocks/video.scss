@@ -20,12 +20,6 @@
   }
 }
 
-/* .video__wrapper {
-  position: relative;
-
-
-} */
-
 .video__title {
   position: relative;
   font-size: 17px;
@@ -102,12 +96,6 @@
     flex-direction: column-reverse;
   }
 
-  /* .video__wrapper {
-    padding: 0;
-    display: flex;
-    flex-direction: column-reverse;
-  } */
-
   .video__title {
     margin-bottom: 32px;
     font-size: 20px;
@@ -150,11 +138,6 @@
     width: $desktop_width;
     flex-direction: row-reverse;
   }
-
-/*   .video__wrapper {
-
-    padding: 0;
-  } */
 
   .video__info {
     padding: 95px 57px 60px 79px;

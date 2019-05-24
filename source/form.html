@@ -8,6 +8,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
+  <script defer src="js/picturefill.min.js"></script>
   <script defer src="js/svgxuse.min.js"></script>
 </head>
 
@@ -85,7 +86,7 @@
       <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами,
         чтобы уточнить детали.</p>
-      <form>
+      <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="fieldset">
           <span class="form__label form__label--green fieldset__legend">Тип</span>
           <div class="fieldset__controls">
@@ -195,7 +196,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a href="#" aria-label="Инстаграм" class="social__link social__link--instagram icon">
-              <svg  width="21.769px" height="21.334px">
+              <svg width="21.769px" height="21.334px">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>

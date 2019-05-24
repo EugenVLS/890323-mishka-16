@@ -30,7 +30,8 @@
 
 .info-nav__link--basket {
   svg {
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

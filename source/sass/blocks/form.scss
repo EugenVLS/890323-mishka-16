@@ -437,7 +437,7 @@
     width: 700px;
   }
 
-  .fieldset__controls .form__checkbox {
+  .form__checkbox:nth-child(n) {
     width: 33.3333%;
   }
 

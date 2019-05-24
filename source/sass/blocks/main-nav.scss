@@ -77,13 +77,20 @@
     padding-left: 0;
   }
 
-  .main-nav__list .main-nav__item {
+  .main-nav__item {
+    width: 50%;
     padding-top: 0;
+    padding-right: 0;
     align-items: center;
   }
 
-  .main-nav__item {
-    width: 50%;
+  .main-nav__item:first-child {
+    border-right: 1px solid #ececec;
+    width: 185px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    padding-left: 35px;
   }
 
   .main-nav__item .main-nav__link {

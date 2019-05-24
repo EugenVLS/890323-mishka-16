@@ -111,7 +111,6 @@
   }
 
   .product__image {
-    /* position: inherit; */
     margin-bottom: 0;
     margin-top: 8px;
     bottom: 0;
@@ -126,9 +125,6 @@
 
 @media (min-width: $desktop_width) {
   .product__header {
-/*     position: absolute;
-    top: 125px;
-    left: 66px; */
     flex-direction: row-reverse;
     justify-content: flex-end;
     padding-left: 35px;
@@ -138,7 +134,6 @@
     width: 482px;
     padding-left: 164px;
     padding-right: 26px;
-    /* padding-top: 166px; */
     margin-right: 32px;
   }
 

@@ -47,6 +47,7 @@
   font-weight: 400;
   line-height: 30px;
   color: $grey;
+  vertical-align: top;
 }
 
 .contacts__table td:first-child {
@@ -203,6 +204,7 @@
   .contacts__table tr {
     flex-grow: 1;
     padding-right: 0;
+    align-items: flex-start;
   }
 
   .contacts__table td:first-child {

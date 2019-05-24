@@ -7,6 +7,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  min-width: 186px;
+  flex-shrink: 0;
 
   @include list_reset();
   padding-left: 57px;
